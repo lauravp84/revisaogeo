@@ -8,6 +8,17 @@ let reviewMode = false;
 let studentName = '';
 let loginTime = null;
 
+// Configuração dos tópicos
+const quizConfig = {
+  topicNames: {
+    topic3: "Tópico 3: Introdução à GEO",
+    topic4: "Tópico 4: Localização Industrial",
+    topic5: "Tópico 5: Arranjo Físico",
+    topic6: "Tópico 6: PCP",
+    topic8: "Tópico 8: Jogo do Barco"
+  }
+};
+
 // Elementos DOM
 const loginScreen = document.getElementById('login-screen');
 const introScreen = document.getElementById('intro-screen');
@@ -152,9 +163,20 @@ function showQuestion(index) {
     } else {
         // Se o usuário já respondeu esta questão, marcar a resposta selecionada
         if (userAnswers[index] !== null) {
-            const selectedOption = document.querySelector(`[data-index="${userAnswers[index]}"]`);
+            let selectedOption;
+            if (question.type === 'truefalse') {
+                selectedOption = document.querySelector(`.option[data-index="${userAnswers[index]}"]`);
+            } else {
+                selectedOption = document.querySelector(`.option[data-index="${userAnswers[index]}"]`);
+            }
+            
             if (selectedOption) {
                 selectedOption.classList.add('selected');
+                // Marcar o input radio também
+                const input = selectedOption.querySelector('input');
+                if (input) {
+                    input.checked = true;
+                }
             }
         }
         
@@ -188,7 +210,34 @@ function createMultipleChoiceOption(text, optionIndex, questionIndex) {
         optionDiv.addEventListener('click', () => {
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
-            options.forEach(opt => opt.classList.remove('selected'));
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+                const radioInput = opt.querySelector('input');
+                if (radioInput) {
+                    radioInput.checked = false;
+                }
+            });
+            
+            // Marcar esta opção como selecionada
+            optionDiv.classList.add('selected');
+            const radioInput = optionDiv.querySelector('input');
+            if (radioInput) {
+                radioInput.checked = true;
+            }
+            
+            // Armazenar resposta do usuário
+            userAnswers[questionIndex] = optionIndex;
+        });
+        
+        // Adicionar evento de clique também ao input
+        input.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evitar propagação para o div pai
+            
+            // Remover seleção anterior
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+            });
             
             // Marcar esta opção como selecionada
             optionDiv.classList.add('selected');
@@ -205,7 +254,7 @@ function createMultipleChoiceOption(text, optionIndex, questionIndex) {
 function createTrueFalseOption(text, value, questionIndex) {
     const optionDiv = document.createElement('div');
     optionDiv.className = 'option';
-    optionDiv.setAttribute('data-index', value);
+    optionDiv.setAttribute('data-index', value.toString());
     
     const input = document.createElement('input');
     input.type = 'radio';
@@ -226,7 +275,34 @@ function createTrueFalseOption(text, value, questionIndex) {
         optionDiv.addEventListener('click', () => {
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
-            options.forEach(opt => opt.classList.remove('selected'));
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+                const radioInput = opt.querySelector('input');
+                if (radioInput) {
+                    radioInput.checked = false;
+                }
+            });
+            
+            // Marcar esta opção como selecionada
+            optionDiv.classList.add('selected');
+            const radioInput = optionDiv.querySelector('input');
+            if (radioInput) {
+                radioInput.checked = true;
+            }
+            
+            // Armazenar resposta do usuário
+            userAnswers[questionIndex] = value;
+        });
+        
+        // Adicionar evento de clique também ao input
+        input.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evitar propagação para o div pai
+            
+            // Remover seleção anterior
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => {
+                opt.classList.remove('selected');
+            });
             
             // Marcar esta opção como selecionada
             optionDiv.classList.add('selected');
@@ -254,23 +330,35 @@ function checkAnswer() {
     const explanation = document.getElementById('explanation');
     
     // Marcar resposta correta e incorreta
-    options.forEach((option, index) => {
+    options.forEach((option) => {
         const optionIndex = option.getAttribute('data-index');
-        const isCorrect = 
-            (currentQuestion.type === 'truefalse' && 
-             ((optionIndex === 'true' && currentQuestion.answer === true) || 
-              (optionIndex === 'false' && currentQuestion.answer === false))) ||
-            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === currentQuestion.answer);
+        let isCorrect = false;
+        
+        if (currentQuestion.type === 'truefalse') {
+            // Para verdadeiro/falso, comparar strings 'true'/'false' com booleanos
+            isCorrect = (optionIndex === 'true' && currentQuestion.answer === true) || 
+                        (optionIndex === 'false' && currentQuestion.answer === false);
+        } else {
+            // Para múltipla escolha e múltipla assertiva, comparar índices numéricos
+            isCorrect = parseInt(optionIndex) === currentQuestion.answer;
+        }
         
         if (isCorrect) {
             option.classList.add('correct');
-        } else if (
-            (currentQuestion.type === 'truefalse' && 
-             ((optionIndex === 'true' && userAnswer === true) || 
-              (optionIndex === 'false' && userAnswer === false))) ||
-            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
-        ) {
-            option.classList.add('incorrect');
+        } else {
+            // Verificar se esta foi a opção selecionada pelo usuário
+            let isSelected = false;
+            
+            if (currentQuestion.type === 'truefalse') {
+                isSelected = (optionIndex === 'true' && userAnswer === true) || 
+                             (optionIndex === 'false' && userAnswer === false);
+            } else {
+                isSelected = parseInt(optionIndex) === userAnswer;
+            }
+            
+            if (isSelected) {
+                option.classList.add('incorrect');
+            }
         }
     });
     
@@ -284,21 +372,21 @@ function checkAnswer() {
     
     // Mudar texto do botão para próxima questão
     submitBtn.textContent = 'Próxima Questão';
-    submitBtn.removeEventListener('click', checkAnswer);
+    
+    // Remover todos os event listeners anteriores
+    const newSubmitBtn = submitBtn.cloneNode(true);
+    submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
+    submitBtn = newSubmitBtn;
     
     // Adicionar novo event listener para o botão de próxima questão
-    const nextQuestionHandler = function() {
+    submitBtn.addEventListener('click', function nextQuestionHandler() {
         if (currentQuestionIndex < currentQuestions.length - 1) {
             showNextQuestion();
         } else {
             calculateScore();
             showResultScreen();
         }
-        // Remover este event listener após uso para evitar duplicação
-        submitBtn.removeEventListener('click', nextQuestionHandler);
-    };
-    
-    submitBtn.addEventListener('click', nextQuestionHandler);
+    });
 }
 
 // Mostrar questão anterior
@@ -319,10 +407,9 @@ function showNextQuestion() {
         submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
         
         // Remover todos os event listeners anteriores e adicionar o correto
-        submitBtn.removeEventListener('click', showNextQuestion);
-        const elClone = submitBtn.cloneNode(true);
-        submitBtn.parentNode.replaceChild(elClone, submitBtn);
-        submitBtn = elClone;
+        const newSubmitBtn = submitBtn.cloneNode(true);
+        submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
+        submitBtn = newSubmitBtn;
         submitBtn.addEventListener('click', checkAnswer);
     }
 }
@@ -334,14 +421,18 @@ function calculateScore() {
     currentQuestions.forEach((question, index) => {
         const userAnswer = userAnswers[index];
         
+        if (userAnswer === null) return; // Pular questões não respondidas
+        
+        let isCorrect = false;
+        
         if (question.type === 'truefalse') {
-            if (userAnswer === question.answer) {
-                score++;
-            }
+            isCorrect = userAnswer === question.answer;
         } else {
-            if (userAnswer === question.answer) {
-                score++;
-            }
+            isCorrect = userAnswer === question.answer;
+        }
+        
+        if (isCorrect) {
+            score++;
         }
     });
 }
@@ -361,7 +452,9 @@ function goToIntroScreen() {
     
     // Resetar o botão de verificação
     submitBtn.textContent = 'Verificar Resposta';
-    submitBtn.removeEventListener('click', showNextQuestion);
+    const newSubmitBtn = submitBtn.cloneNode(true);
+    submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
+    submitBtn = newSubmitBtn;
     submitBtn.addEventListener('click', checkAnswer);
 }
 
@@ -386,9 +479,33 @@ function showResultScreen() {
     resultBreakdown.innerHTML = '';
     currentQuestions.forEach((question, index) => {
         const userAnswer = userAnswers[index];
-        const isCorrect = 
-            (question.type === 'truefalse' && userAnswer === question.answer) ||
-            (question.type !== 'truefalse' && userAnswer === question.answer);
+        
+        if (userAnswer === null) {
+            // Questão não respondida
+            const resultItem = document.createElement('div');
+            resultItem.className = 'result-item';
+            
+            const questionSpan = document.createElement('span');
+            questionSpan.className = 'result-question';
+            questionSpan.textContent = `Questão ${index + 1}`;
+            
+            const statusSpan = document.createElement('span');
+            statusSpan.className = 'result-status';
+            statusSpan.textContent = 'Não respondida';
+            
+            resultItem.appendChild(questionSpan);
+            resultItem.appendChild(statusSpan);
+            resultBreakdown.appendChild(resultItem);
+            return;
+        }
+        
+        let isCorrect = false;
+        
+        if (question.type === 'truefalse') {
+            isCorrect = userAnswer === question.answer;
+        } else {
+            isCorrect = userAnswer === question.answer;
+        }
         
         const resultItem = document.createElement('div');
         resultItem.className = 'result-item';
@@ -426,9 +543,15 @@ function showReviewScreen() {
     
     currentQuestions.forEach((question, index) => {
         const userAnswer = userAnswers[index];
-        const isCorrect = 
-            (question.type === 'truefalse' && userAnswer === question.answer) ||
-            (question.type !== 'truefalse' && userAnswer === question.answer);
+        
+        let isCorrect = false;
+        if (userAnswer !== null) {
+            if (question.type === 'truefalse') {
+                isCorrect = userAnswer === question.answer;
+            } else {
+                isCorrect = userAnswer === question.answer;
+            }
+        }
         
         const reviewQuestion = document.createElement('div');
         reviewQuestion.className = 'review-question';
@@ -449,11 +572,11 @@ function showReviewScreen() {
                     reviewOption.classList.add('correct');
                 }
                 
-                if (i === userAnswer && i !== question.answer) {
+                if (userAnswer !== null && i === userAnswer && i !== question.answer) {
                     reviewOption.classList.add('incorrect');
                 }
                 
-                if (i === userAnswer) {
+                if (userAnswer !== null && i === userAnswer) {
                     reviewOption.classList.add('selected');
                 }
                 
@@ -475,16 +598,18 @@ function showReviewScreen() {
                 falseOption.classList.add('correct');
             }
             
-            if (userAnswer === true && question.answer !== true) {
-                trueOption.classList.add('incorrect');
-            } else if (userAnswer === false && question.answer !== false) {
-                falseOption.classList.add('incorrect');
-            }
-            
-            if (userAnswer === true) {
-                trueOption.classList.add('selected');
-            } else if (userAnswer === false) {
-                falseOption.classList.add('selected');
+            if (userAnswer !== null) {
+                if (userAnswer === true && question.answer !== true) {
+                    trueOption.classList.add('incorrect');
+                } else if (userAnswer === false && question.answer !== false) {
+                    falseOption.classList.add('incorrect');
+                }
+                
+                if (userAnswer === true) {
+                    trueOption.classList.add('selected');
+                } else if (userAnswer === false) {
+                    falseOption.classList.add('selected');
+                }
             }
             
             reviewOptions.appendChild(trueOption);
@@ -514,29 +639,32 @@ function showAnswerInReviewMode(index) {
     
     options.forEach((option) => {
         const optionIndex = option.getAttribute('data-index');
-        const isCorrect = 
-            (currentQuestion.type === 'truefalse' && 
-             ((optionIndex === 'true' && currentQuestion.answer === true) || 
-              (optionIndex === 'false' && currentQuestion.answer === false))) ||
-            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === currentQuestion.answer);
+        let isCorrect = false;
+        let isSelected = false;
+        
+        if (currentQuestion.type === 'truefalse') {
+            isCorrect = (optionIndex === 'true' && currentQuestion.answer === true) || 
+                        (optionIndex === 'false' && currentQuestion.answer === false);
+                        
+            if (userAnswer !== null) {
+                isSelected = (optionIndex === 'true' && userAnswer === true) || 
+                             (optionIndex === 'false' && userAnswer === false);
+            }
+        } else {
+            isCorrect = parseInt(optionIndex) === currentQuestion.answer;
+            
+            if (userAnswer !== null) {
+                isSelected = parseInt(optionIndex) === userAnswer;
+            }
+        }
         
         if (isCorrect) {
             option.classList.add('correct');
-        } else if (
-            (currentQuestion.type === 'truefalse' && 
-             ((optionIndex === 'true' && userAnswer === true) || 
-              (optionIndex === 'false' && userAnswer === false))) ||
-            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
-        ) {
+        } else if (isSelected) {
             option.classList.add('incorrect');
         }
         
-        if (
-            (currentQuestion.type === 'truefalse' && 
-             ((optionIndex === 'true' && userAnswer === true) || 
-              (optionIndex === 'false' && userAnswer === false))) ||
-            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
-        ) {
+        if (isSelected) {
             option.classList.add('selected');
         }
         
