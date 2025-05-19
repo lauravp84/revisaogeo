@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo Gestão Estratégica de Operações</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .topic-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .topic-item {
+            padding: 15px;
+            margin-bottom: 10px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .topic-item:hover {
+            background-color: #2980b9;
+        }
+        
+        .question-container {
+            display: none;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: #ecf0f1;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #3498db;
+            width: 0;
+            transition: width 0.3s;
+        }
+        
+        .question-box {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .question-title {
+            color: #3498db;
+            margin-top: 0;
+        }
+        
+        .question-text {
+            margin-bottom: 15px;
+            line-height: 1.5;
+            white-space: pre-line;
+        }
+        
+        .alternatives {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .alternative {
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .alternative:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .alternative.selected {
+            background-color: #3498db;
+            color: white;
+            border-color: #3498db;
+        }
+        
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        #btn-back {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        #btn-check {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        #btn-next {
+            background-color: #f39c12;
+            color: white;
+        }
+        
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .feedback {
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            display: none;
+        }
+        
+        .feedback.correct {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        
+        .feedback.incorrect {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz Interativo Gestão Estratégica de Operações</h1>
+        <p style="margin-top: 5px; font-style: italic; color: white;">Profª. Laura Marina Valencia Niño</p>
+    </header>
+    
+    <div class="content">
+        <!-- Tela inicial com lista de tópicos -->
+        <div id="topic-screen">
+            <h2>Selecione um tópico:</h2>
+            <ul class="topic-list">
+                <li class="topic-item" onclick="iniciarTopico(3, 'Introdução à GEO', 1, 25)">Tópico 3: Introdução à GEO (Questões 1–25)</li>
+                <li class="topic-item" onclick="iniciarTopico(4, 'Localização Industrial', 26, 50)">Tópico 4: Localização Industrial (Questões 26–50)</li>
+                <li class="topic-item" onclick="iniciarTopico(5, 'Arranjo Físico', 51, 75)">Tópico 5: Arranjo Físico (Questões 51–75)</li>
+                <li class="topic-item" onclick="iniciarTopico(6, 'PCP', 76, 100)">Tópico 6: PCP (Questões 76–100)</li>
+                <li class="topic-item" onclick="iniciarTopico(8, 'Jogo do Barco', 101, 125)">Tópico 8: Jogo do Barco (Questões 101–125)</li>
+            </ul>
+        </div>
+        
+        <!-- Tela de questões -->
+        <div id="question-screen" class="question-container">
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-fill"></div>
+            </div>
+            
+            <div class="question-box">
+                <h3 class="question-title" id="question-number">Questão 1</h3>
+                <div class="question-text" id="question-text"></div>
+                
+                <ul class="alternatives" id="alternatives-list"></ul>
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <div class="buttons">
+                <button id="btn-back" onclick="voltarAoMenu()">Voltar ao Menu</button>
+                <button id="btn-check" onclick="verificarResposta()">Verificar</button>
+                <button id="btn-next" onclick="proximaQuestao()" disabled>Próxima</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Variáveis globais
+        let questoes = {};
+        let topicoAtual = null;
+        let questaoAtualIndex = 0;
+        let questoesDoTopico = [];
+        let respostaUsuario = null;
+        
+        // Carregar dados de questões
+        async function carregarQuestoes() {
+            try {
+                const response = await fetch('data/questoes_melhoradas.json');
+                if (!response.ok) {
+                    throw new Error('Erro ao carregar questões');
+                }
+                
+                questoes = await response.json();
+                console.log('Questões carregadas:', Object.keys(questoes).length);
+            } catch (error) {
+                console.error('Erro ao carregar questões:', error);
+                alert('Erro ao carregar as questões. Por favor, recarregue a página.');
+            }
+        }
+        
+        // Iniciar um tópico
+        function iniciarTopico(id, titulo, faixaInicio, faixaFim) {
+            topicoAtual = {
+                id: id,
+                titulo: titulo,
+                faixa_inicio: faixaInicio,
+                faixa_fim: faixaFim
+            };
+            
+            // Filtrar questões do tópico
+            questoesDoTopico = [];
+            for (let i = faixaInicio; i <= faixaFim; i++) {
+                if (questoes[i]) {
+                    questoesDoTopico.push(questoes[i]);
+                }
+            }
+            
+            if (questoesDoTopico.length === 0) {
+                alert('Não foram encontradas questões para este tópico.');
+                return;
+            }
+            
+            questaoAtualIndex = 0;
+            document.getElementById('topic-screen').style.display = 'none';
+            document.getElementById('question-screen').style.display = 'block';
+            renderizarQuestao();
+        }
+        
+        // Renderizar questão atual
+        function renderizarQuestao() {
+            const questao = questoesDoTopico[questaoAtualIndex];
+            
+            // Atualizar progresso
+            const progresso = ((questaoAtualIndex + 1) / questoesDoTopico.length) * 100;
+            document.getElementById('progress-fill').style.width = `${progresso}%`;
+            
+            // Atualizar número da questão
+            document.getElementById('question-number').textContent = `Questão ${questao.numero}`;
+            
+            // Atualizar texto da questão
+            document.getElementById('question-text').textContent = questao.enunciado;
+            
+            // Limpar alternativas anteriores
+            const alternativesList = document.getElementById('alternatives-list');
+            alternativesList.innerHTML = '';
+            
+            // Adicionar alternativas
+            if (questao.eh_vf) {
+                // Questão de verdadeiro/falso
+                const altV = document.createElement('li');
+                altV.className = 'alternative';
+                altV.textContent = 'V) Verdadeiro';
+                altV.setAttribute('data-letra', 'V');
+                altV.addEventListener('click', selecionarAlternativa);
+                alternativesList.appendChild(altV);
+                
+                const altF = document.createElement('li');
+                altF.className = 'alternative';
+                altF.textContent = 'F) Falso';
+                altF.setAttribute('data-letra', 'F');
+                altF.addEventListener('click', selecionarAlternativa);
+                alternativesList.appendChild(altF);
+            } else {
+                // Questão de múltipla escolha
+                questao.alternativas.forEach(alt => {
+                    const li = document.createElement('li');
+                    li.className = 'alternative';
+                    li.textContent = `${alt.letra}) ${alt.texto}`;
+                    li.setAttribute('data-letra', alt.letra);
+                    li.addEventListener('click', selecionarAlternativa);
+                    alternativesList.appendChild(li);
+                });
+            }
+            
+            // Resetar resposta do usuário
+            respostaUsuario = null;
+            
+            // Resetar feedback
+            document.getElementById('feedback').style.display = 'none';
+            
+            // Resetar botões
+            document.getElementById('btn-check').disabled = false;
+            document.getElementById('btn-next').disabled = true;
+        }
+        
+        // Selecionar alternativa
+        function selecionarAlternativa(event) {
+            // Remover seleção anterior
+            const alternativas = document.querySelectorAll('.alternative');
+            alternativas.forEach(alt => alt.classList.remove('selected'));
+            
+            // Selecionar alternativa clicada
+            event.target.classList.add('selected');
+            respostaUsuario = event.target.getAttribute('data-letra');
+        }
+        
+        // Verificar resposta
+        function verificarResposta() {
+            if (!respostaUsuario) {
+                alert('Por favor, selecione uma alternativa.');
+                return;
+            }
+            
+            const questao = questoesDoTopico[questaoAtualIndex];
+            const feedbackElement = document.getElementById('feedback');
+            
+            // Normalizar resposta do usuário e gabarito para comparação
+            let respostaNormalizada = respostaUsuario.toLowerCase().trim();
+            let gabaritoNormalizado = questao.gabarito.toLowerCase().trim();
+            
+            // Converter v/f para verdadeiro/falso se necessário
+            if (questao.eh_vf) {
+                if (respostaNormalizada === 'v') respostaNormalizada = 'verdadeiro';
+                if (respostaNormalizada === 'f') respostaNormalizada = 'falso';
+                if (gabaritoNormalizado === 'v') gabaritoNormalizado = 'verdadeiro';
+                if (gabaritoNormalizado === 'f') gabaritoNormalizado = 'falso';
+            }
+            
+            console.log('Resposta do usuário:', respostaNormalizada);
+            console.log('Gabarito:', gabaritoNormalizado);
+            
+            const estaCorreto = respostaNormalizada === gabaritoNormalizado;
+            
+            // Exibir feedback
+            feedbackElement.className = `feedback ${estaCorreto ? 'correct' : 'incorrect'}`;
+            feedbackElement.innerHTML = estaCorreto 
+                ? '<strong>Correto!</strong> Parabéns, você acertou!' 
+                : `<strong>Incorreto.</strong> A resposta correta é: ${questao.gabarito.toUpperCase()}`;
+            feedbackElement.style.display = 'block';
+            
+            // Habilitar botão de próxima questão
+            document.getElementById('btn-check').disabled = true;
+            document.getElementById('btn-next').disabled = false;
+        }
+        
+        // Próxima questão
+        function proximaQuestao() {
+            questaoAtualIndex++;
+            
+            if (questaoAtualIndex >= questoesDoTopico.length) {
+                // Voltar para a tela de tópicos se acabaram as questões
+                voltarAoMenu();
+            } else {
+                renderizarQuestao();
+            }
+        }
+        
+        // Voltar ao menu
+        function voltarAoMenu() {
+            document.getElementById('question-screen').style.display = 'none';
+            document.getElementById('topic-screen').style.display = 'block';
+        }
+        
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', carregarQuestoes);
+    </script>
+</body>
+</html>

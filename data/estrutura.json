@@ -1,0 +1,34 @@
+{
+  "topicos": [
+    {
+      "id": 3,
+      "titulo": "Introdução à GEO",
+      "faixa_inicio": 1,
+      "faixa_fim": 25
+    },
+    {
+      "id": 4,
+      "titulo": "Localização Industrial",
+      "faixa_inicio": 26,
+      "faixa_fim": 50
+    },
+    {
+      "id": 5,
+      "titulo": "Arranjo Físico",
+      "faixa_inicio": 51,
+      "faixa_fim": 75
+    },
+    {
+      "id": 6,
+      "titulo": "PCP",
+      "faixa_inicio": 76,
+      "faixa_fim": 100
+    },
+    {
+      "id": 8,
+      "titulo": "Jogo do Barco",
+      "faixa_inicio": 101,
+      "faixa_fim": 125
+    }
+  ]
+}

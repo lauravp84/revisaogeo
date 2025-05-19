@@ -1,0 +1,2787 @@
+{
+  "1": {
+    "numero": 1,
+    "topico": 3,
+    "enunciado": "Segundo  os slides do tópico  “Introdução  à GEO”, qual afirmação  melhor  expressa a função  estratégica  da  produção \nnas organizações?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "A produção  é um setor operacional  isolado  das decisões  de longo  prazo."
+      },
+      {
+        "letra": "b",
+        "texto": "A produção  é responsável  apenas  pela entrega  física  dos produtos."
+      },
+      {
+        "letra": "c",
+        "texto": "A função  produção  define  padrões  de decisão  que moldam  a visão estratégica  da empresa."
+      },
+      {
+        "letra": "d",
+        "texto": "A função  produção  atua  exclusivamente  com  recursos humanos  e financeiros."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "2": {
+    "numero": 2,
+    "topico": 3,
+    "enunciado": "De acordo  com  o modelo  de transformação  apresentado  no material  da  disciplina,  os recursos  transformados \nincluem:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Somente  materiais  e produtos  finais."
+      },
+      {
+        "letra": "b",
+        "texto": "Equipamentos,  instalações  e sistemas de controle."
+      },
+      {
+        "letra": "c",
+        "texto": "Materiais,  informações  e clientes."
+      },
+      {
+        "letra": "d",
+        "texto": "Fornecedores,  estoques  e indicadores  de desempenho."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "3": {
+    "numero": 3,
+    "topico": 3,
+    "enunciado": "Sobre  os modelos  produtivos  apresentados  na Introdução  à GEO,  avalie as seguintes afirmativas: \nI. O modelo  de produção  contínua  caracteriza-se  por volumes  elevados  e variedade  mínima. \nII.  A produção  por  projeto apresenta  baixa  padronização  e alta customização. \nIII.  A produção  em massa  é mais  indicada  para produtos  artesanais  personalizados. \nIV. O jobbing  lida com  grandes  volumes  e processos  padronizados.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I e II estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  III  e IV estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  as afirmativas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "4": {
+    "numero": 4,
+    "topico": 3,
+    "enunciado": "(V/F) A função  produção  está presente em todas  as organizações,  pois todas  produzem  algum  tipo de valor, seja \ntangível  ou intangível.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "5": {
+    "numero": 5,
+    "topico": 3,
+    "enunciado": "(V/F) O objetivo  de custo, na função  produção,  está diretamente  relacionado  à eficiência  operacional,  pois quanto \nmenor  o custo de produção,  maior  o preço  de venda  para  o cliente.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "6": {
+    "numero": 6,
+    "topico": 3,
+    "enunciado": "Segundo  o modelo  de transformação  descrito por  Slack, qual  dos seguintes  exemplos  representa  um recurso de \ntransformação  em uma operação  bancária?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Dados  de clientes no  sistema"
+      },
+      {
+        "letra": "b",
+        "texto": "Cédulas  e moedas  depositadas"
+      },
+      {
+        "letra": "c",
+        "texto": "O caixa  responsável  pelo  atendimento"
+      },
+      {
+        "letra": "d",
+        "texto": "Os extratos gerados  ao  final das  transações"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "7": {
+    "numero": 7,
+    "topico": 3,
+    "enunciado": "De acordo  com  os slides da Introdução  à GEO,  assinale  a afirmativa  correta:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "A estratégia de operações  é um  plano  de ação  de curto prazo,  voltado  para  o setor financeiro."
+      },
+      {
+        "letra": "b",
+        "texto": "As decisões da função  produção  não  afetam a visão estratégica  da empresa."
+      },
+      {
+        "letra": "c",
+        "texto": "A gestão da  produção  pode contribuir  para  a vantagem  competitiva  organizacional."
+      },
+      {
+        "letra": "d",
+        "texto": "A operação  é responsável  apenas  pela  execução  de tarefas técnicas."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "8": {
+    "numero": 8,
+    "topico": 3,
+    "enunciado": "Sobre  os objetivos  de desempenho  da  função  produção,  assinale  as corretas: \nI. Qualidade  está ligada  a fazer as coisas  certas. \nII.  Confiabilidade  é relacionada  ao cumprimento  de promessas. \nIII.  Custo elevado está associado  a maior  valor percebido. \nIV. Velocidade  influencia  o tempo  de resposta ao  cliente.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "9": {
+    "numero": 9,
+    "topico": 3,
+    "enunciado": "(V/F) A flexibilidade,  como  objetivo  de desempenho,  inclui a capacidade  de adaptar  a operação  a mudanças  de mix, \nvolume  e prazos.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "10": {
+    "numero": 10,
+    "topico": 3,
+    "enunciado": "(V/F)  De acordo  com  a literatura apresentada,  o modelo  de transformação  aplica-se  exclusivamente  ao setor \nindustrial,  não  sendo  adequado  para  operações  de serviço.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "11": {
+    "numero": 11,
+    "topico": 3,
+    "enunciado": "No  contexto da administração  da produção,  qual  objetivo  de desempenho  está relacionado  a “fazer  as coisas \ncertas”, evitando  erros e retrabalho?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Velocidade"
+      },
+      {
+        "letra": "b",
+        "texto": "Confiabilidade"
+      },
+      {
+        "letra": "c",
+        "texto": "Qualidade"
+      },
+      {
+        "letra": "d",
+        "texto": "Flexibilidade"
+      },
+      {
+        "letra": "e",
+        "texto": "Custo"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "12": {
+    "numero": 12,
+    "topico": 3,
+    "enunciado": "Segundo  os anexos,  qual alternativa  melhor  exemplifica  a importância  da velocidade  em hospitais?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Reduzir  o custo dos insumos"
+      },
+      {
+        "letra": "b",
+        "texto": "Minimizar  o tempo  entre o pedido  de tratamento  e sua efetivação"
+      },
+      {
+        "letra": "c",
+        "texto": "Garantir  cortesia  dos funcionários"
+      },
+      {
+        "letra": "d",
+        "texto": "Aumentar  a variedade  de exames"
+      },
+      {
+        "letra": "e",
+        "texto": "Diminuir  o tempo de permanência  nas filas"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "13": {
+    "numero": 13,
+    "topico": 3,
+    "enunciado": "De acordo  com o conceito  de confiabilidade  nos anexos,  qual  situação  abaixo  demonstra  esse objetivo  em uma \nempresa  de ônibus?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Introdução  de novas  rotas"
+      },
+      {
+        "letra": "b",
+        "texto": "Cumprimento  rigoroso  dos horários  anunciados"
+      },
+      {
+        "letra": "c",
+        "texto": "Redução  do custo de manutenção"
+      },
+      {
+        "letra": "d",
+        "texto": "Aumento  da  variedade  de veículos"
+      },
+      {
+        "letra": "e",
+        "texto": "Implementação  de novos  serviços  digitais"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "14": {
+    "numero": 14,
+    "topico": 3,
+    "enunciado": "No  modelo  de transformação  apresentado  nos anexos,  qual  alternativa  representa  corretamente  um  recurso \ntransformado  em uma  fábrica  de carros?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Equipamentos  de montagem"
+      },
+      {
+        "letra": "b",
+        "texto": "Funcionários"
+      },
+      {
+        "letra": "c",
+        "texto": "Chapas  de aço"
+      },
+      {
+        "letra": "d",
+        "texto": "Sistemas  de informação"
+      },
+      {
+        "letra": "e",
+        "texto": "Layout da fábrica"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "15": {
+    "numero": 15,
+    "topico": 3,
+    "enunciado": "Segundo  os anexos,  qual das  alternativas  melhor  exemplifica  flexibilidade  de entrega  em supermercados?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Ampla  variedade  de bens estocados"
+      },
+      {
+        "letra": "b",
+        "texto": "Capacidade  de ajustar  o número  de clientes atendidos"
+      },
+      {
+        "letra": "c",
+        "texto": "Habilidade  de obter itens fora de estoque ocasionalmente"
+      },
+      {
+        "letra": "d",
+        "texto": "Introdução  de novos  bens ou promoções"
+      },
+      {
+        "letra": "e",
+        "texto": "Redução  do tempo  de permanência  nas  filas"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "16": {
+    "numero": 16,
+    "topico": 3,
+    "enunciado": "( ) A qualidade  é considerada  a principal  influência  na satisfação  do  cliente.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "17": {
+    "numero": 17,
+    "topico": 3,
+    "enunciado": "( ) A velocidade  operacional  não tem impacto  sobre o nível de estoques nas  operações  produtivas.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "18": {
+    "numero": 18,
+    "topico": 3,
+    "enunciado": "( ) Confiabilidade  nas operações  pode  gerar  economia  de tempo  e dinheiro.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "19": {
+    "numero": 19,
+    "topico": 3,
+    "enunciado": "( ) Flexibilidade  de volume refere-se à capacidade  de introduzir  novos produtos  ou serviços  em uma  operação.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "20": {
+    "numero": 20,
+    "topico": 3,
+    "enunciado": "( ) O custo é considerado  um objetivo  de desempenho  porque  permite  à organização  oferecer preços  mais \ncompetitivos.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "21": {
+    "numero": 21,
+    "topico": 3,
+    "enunciado": "Sobre  os objetivos de desempenho  da produção,  analise  as afirmativas: \nI. Qualidade  reduz  custos internos  ao evitar retrabalho. \nII.  Velocidade  operacional  pode diminuir  riscos  associados  à previsão  de demanda. \nIII.  Confiabilidade  é menos  relevante para  a satisfação  do cliente do que o custo. \nIV. Flexibilidade  permite adaptação  a mudanças  nas necessidades  dos clientes.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  I e III  estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  II, III  e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "I, II,  III e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "22": {
+    "numero": 22,
+    "topico": 3,
+    "enunciado": "Analise  as assertivas  sobre o modelo  de transformação: \nI. Recursos  transformados  incluem  materiais,  informações  e clientes. \nII.  Recursos de transformação  são aqueles  que  sofrem alteração  durante  o processo. \nIII.  O output  do  processo pode  ser um bem físico,  um serviço  ou ambos. \nIV. O modelo  de transformação  é aplicável  apenas  à indústria  manufatureira. \n\n \n \n \n \n\f      Universidade  Federal  do Rio  de Janeiro  – UFRJ \n      Faculdade de Administração  e Ciências  Contábeis  – FACC \n      Departamento  de Administração",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I e III"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, III e IV"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  I,  II e III"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "23": {
+    "numero": 23,
+    "topico": 3,
+    "enunciado": "Sobre  os exemplos de flexibilidade  apresentados  nos anexos,  avalie: \nI. Em hospitais,  flexibilidade  inclui a introdução  de novos tipos de tratamento. \nII.  Em montadoras,  flexibilidade  de mix refere-se à variedade  de opções  de veículos. \nIII.  Em supermercados,  flexibilidade  de entrega  é a habilidade  de obter itens fora de estoque. \nIV. Em empresas  de ônibus,  flexibilidade  de volume  significa  ajustar  a frequência  dos  serviços.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II, III  e IV"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  II,  III  e IV"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "24": {
+    "numero": 24,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre custo na produção: \nI. Redução  de custos permite  preços  mais competitivos. \nII.  Custos elevados  podem  ser compensados  por alta  confiabilidade. \nIII.  O controle  de custos é irrelevante para  organizações  sem fins lucrativos. \nIV. Custos menores  podem  resultar  de operações  com  menos  erros e desperdícios.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I e IV"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II e IV"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "25": {
+    "numero": 25,
+    "topico": 3,
+    "enunciado": "Em relação  à gestão  estratégica  de operações,  avalie: \nI. A administração  da  produção  contribui  para  a estratégia  global  da  empresa. \nII.  O alinhamento  entre produção  e intenção  estratégica  é fundamental. \nIII.  A gestão de operações  é restrita ao setor industrial. \nIV. Os objetivos de desempenho  devem ser considerados  no planejamento  operacional.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  I e III"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  II, III  e IV"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  I,  II, III  e IV"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "26": {
+    "numero": 26,
+    "topico": 3,
+    "enunciado": "Segundo  os slides sobre  Localização  Industrial,  qual  é o principal  motivo  pelo qual  a decisão  de  localização  é \nconsiderada  estratégica?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Porque  influencia  diretamente  o marketing  da  empresa."
+      },
+      {
+        "letra": "b",
+        "texto": "Porque  define os contratos  com  fornecedores  internacionais."
+      },
+      {
+        "letra": "c",
+        "texto": "Porque  determina  onde os produtos  ou serviços  serão  fabricados  ou prestados."
+      },
+      {
+        "letra": "d",
+        "texto": "Porque  garante  a certificação  ISO necessária  para  a operação."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "27": {
+    "numero": 27,
+    "topico": 3,
+    "enunciado": "Com base  nos métodos  de decisão  de localização,  o Sistema de Classificação  de Fatores (SCF) é utilizado  para:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Escolher  localidades  com  menor  carga  tributária."
+      },
+      {
+        "letra": "b",
+        "texto": "Avaliar  riscos  de fornecedores."
+      },
+      {
+        "letra": "c",
+        "texto": "Combinar  múltiplos  critérios qualitativos  com pesos  atribuídos."
+      },
+      {
+        "letra": "d",
+        "texto": "Medir  o ponto  de equilíbrio  financeiro  de cada  localidade."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "28": {
+    "numero": 28,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre localização  industrial: \nI. A exaustão  de matérias-primas  pode  justificar  o fechamento  de uma unidade. \nII.  Prédios térreos favorecem  o arranjo  físico  e reduzem  custos de movimentação. \nIII.  A localização  é irrelevante em empresas  de serviços. \nIV. Os custos fixos  e variáveis são  critérios válidos  de análise  comparativa.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I e II estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  I,  II e IV estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  III e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "29": {
+    "numero": 29,
+    "topico": 3,
+    "enunciado": "(V/F)  A localização  de instalações  produtivas  pode afetar  diretamente  os custos de transporte  e mão  de obra.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "30": {
+    "numero": 30,
+    "topico": 3,
+    "enunciado": "(V/F)  O método  de ponto  de equilíbrio  é inadequado  para  comparar  alternativas  de localização  com  diferentes \ncustos fixos e variáveis.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "31": {
+    "numero": 31,
+    "topico": 3,
+    "enunciado": "Segundo  o método  de comparação  entre custos fixos e variáveis,  qual  é a melhor  localidade  se o volume  de \nprodução  esperado  for elevado?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "A localidade  com menor  custo fixo,  independentemente  do   custo variável."
+      },
+      {
+        "letra": "b",
+        "texto": "A localidade  com  menor  custo variável,  mesmo  que o fixo seja maior."
+      },
+      {
+        "letra": "c",
+        "texto": "A localidade  com maior  ponto  de equilíbrio."
+      },
+      {
+        "letra": "d",
+        "texto": "A localidade  com  menor  número  de funcionários."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "32": {
+    "numero": 32,
+    "topico": 3,
+    "enunciado": "Assinale  a alternativa  que NÃO é um fator determinante  típico  nas decisões  de localização  industrial:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Proximidade  de matérias-primas."
+      },
+      {
+        "letra": "b",
+        "texto": "Existência de mão  de obra  qualificada."
+      },
+      {
+        "letra": "c",
+        "texto": "Nível de endividamento  da empresa."
+      },
+      {
+        "letra": "d",
+        "texto": "Proximidade  do mercado  consumidor."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "33": {
+    "numero": 33,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  a seguir: \nI. A escolha  de uma  nova unidade  pode  manter  as existentes em operação. \nII.  O fechamento  de unidades  pode  ser motivado  por mudanças  de mercado. \nIII.  A análise  de localização  se aplica  somente ao  setor público. \nIV. A escolha  de localização  deve considerar  também  fatores qualitativos.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "34": {
+    "numero": 34,
+    "topico": 3,
+    "enunciado": "(V/F)  A decisão  de localização  é um fator  irreversível, que não  admite revisão  futura  mesmo  diante  de mudanças \nambientais.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "35": {
+    "numero": 35,
+    "topico": 3,
+    "enunciado": "(V/F)  A localização  de unidades  de emergência  deve considerar  critérios de proximidade  e rotas de acesso entre \nregiões  atendidas.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "36": {
+    "numero": 36,
+    "topico": 3,
+    "enunciado": "Segundo  o anexo,  a decisão  sobre localização  industrial  é considerada:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Uma  decisão  operacional  de curto prazo"
+      },
+      {
+        "letra": "b",
+        "texto": "Uma  decisão  estratégica  de planejamento"
+      },
+      {
+        "letra": "c",
+        "texto": "Uma  decisão  tática  de médio  prazo"
+      },
+      {
+        "letra": "d",
+        "texto": "Uma  decisão  irrelevante para  a administração"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "37": {
+    "numero": 37,
+    "topico": 3,
+    "enunciado": "Qual  das alternativas  abaixo  NÃO é uma  opção  básica  para  empresas  em operação  quanto  à localização?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Expandir  uma instalação  existente"
+      },
+      {
+        "letra": "b",
+        "texto": "Adicionar  uma  nova unidade  mantendo  as demais"
+      },
+      {
+        "letra": "c",
+        "texto": "Fechar  uma  unidade  e abrir  outra"
+      },
+      {
+        "letra": "d",
+        "texto": "Ignorar  aspectos  negativos  da localidade"
+      }
+    ],
+    "gabarito": "d",
+    "eh_vf": false
+  },
+  "38": {
+    "numero": 38,
+    "topico": 3,
+    "enunciado": "Segundo  o anexo,  entre os fatores  determinantes  nas decisões de localização  industrial,  destaca-se:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Políticas  de marketing"
+      },
+      {
+        "letra": "b",
+        "texto": "Materiais-primas"
+      },
+      {
+        "letra": "c",
+        "texto": "Design  do produto"
+      },
+      {
+        "letra": "d",
+        "texto": "Estratégias  de vendas"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "39": {
+    "numero": 39,
+    "topico": 3,
+    "enunciado": "No  método  de classificação  de fatores  para  avaliação  de alternativas  de localização,  a escolha  final  recai sobre:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "A localidade  com menor  custo fixo"
+      },
+      {
+        "letra": "b",
+        "texto": "A localidade  com  maior  pontuação  ponderada"
+      },
+      {
+        "letra": "c",
+        "texto": "A localidade  mais próxima  do mercado  consumidor"
+      },
+      {
+        "letra": "d",
+        "texto": "A localidade  com  maior  número  de funcionários"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "40": {
+    "numero": 40,
+    "topico": 3,
+    "enunciado": "No  método  de localização  de unidades  de emergência,  a escolha  da  região  ideal é feita:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Pela maior  população  atendida"
+      },
+      {
+        "letra": "b",
+        "texto": "Pelo menor  dos máximos  tempos  de acesso"
+      },
+      {
+        "letra": "c",
+        "texto": "Pela proximidade  de hospitais"
+      },
+      {
+        "letra": "d",
+        "texto": "Pelo menor  custo de construção"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "41": {
+    "numero": 41,
+    "topico": 3,
+    "enunciado": "( ) Segundo  o anexo,  aspectos  negativos  de uma localidade  devem receber a mesma  atenção  que os positivos no \nprocesso  de decisão.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "42": {
+    "numero": 42,
+    "topico": 3,
+    "enunciado": "( ) O sistema de classificação  de fatores  utiliza apenas  critérios  quantitativos  e ignora  avaliações  qualitativas.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "43": {
+    "numero": 43,
+    "topico": 3,
+    "enunciado": "( ) O fechamento  de uma unidade  industrial  pode  ser motivado  pela exaustão  de matérias-primas  ou aumento \nexagerado  dos custos operacionais.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "44": {
+    "numero": 44,
+    "topico": 3,
+    "enunciado": "( ) O método  de classificação  de fatores  considera  diversos aspectos,  como  mão  de obra,  clima, transportes  e \ncomunidade.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "45": {
+    "numero": 45,
+    "topico": 3,
+    "enunciado": "( ) Segundo  o anexo,  a escolha  do local  para  instalação  de uma  unidade  deve considerar  tanto fatores positivos \nquanto  negativos.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "46": {
+    "numero": 46,
+    "topico": 3,
+    "enunciado": "Sobre  as opções  de localização  para  empresas  em operação,  analise: \nI. Expandir  uma  instalação  existente é viável se houver  espaço  disponível. \nII.  Adicionar  uma  nova  unidade  exige avaliação  do  impacto  no sistema total. \nIII.  Fechar  uma unidade  pode  ser motivado  por  mudanças  de mercado. \nIV. A decisão  de localização  é sempre irreversível.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "47": {
+    "numero": 47,
+    "topico": 3,
+    "enunciado": "No  método  de classificação  de fatores,  considere: \nI. Cada  fator recebe um peso de acordo  com  sua importância. \nII.  A soma  ponderada  das notas  define  a pontuação  final  da localidade. \nIII.  Apenas  fatores  financeiros  são  considerados. \nIV. A localidade  escolhida  é a que obtém  maior  pontuação.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "48": {
+    "numero": 48,
+    "topico": 3,
+    "enunciado": "Sobre  fatores determinantes  na localização  industrial,  avalie: \nI. Materiais-primas  são um fator  relevante. \nII.  Serviços  e infraestrutura  devem ser considerados. \nIII.  A comunidade  local  pode  influenciar  a decisão. \nIV. O mercado  consumidor  não  é relevante para  localização.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "49": {
+    "numero": 49,
+    "topico": 3,
+    "enunciado": "No  sistema de classificação  de fatores, analise: \nI. Cada  localidade  recebe julgamentos  em fatores relevantes. \nII.  O peso de cada  fator  é atribuído  conforme  sua  importância. \nIII.  A localidade  com  maior  soma  ponderada  é escolhida. \nIV. Os fatores podem  incluir  mão de obra,  clima  e transportes.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II, III  e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "50": {
+    "numero": 50,
+    "topico": 3,
+    "enunciado": "Sobre  o método  de localização  de unidades  de emergência,  considere: \nI. O modelo  busca  minimizar  o maior  tempo de acesso entre regiões. \nII.  É aplicado  para  postos  policiais  e ambulâncias. \nIII.  A região  escolhida  é aquela  com o menor  tempo  máximo  de acesso. \nIV. Sempre  seleciona  a região  mais central geograficamente.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "51": {
+    "numero": 51,
+    "topico": 3,
+    "enunciado": "Segundo  os slides do tópico  “Arranjo  Físico”,  o que caracteriza  um arranjo  do tipo posicional?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Recursos  transformados  movem-se  entre as máquinas."
+      },
+      {
+        "letra": "b",
+        "texto": "Recursos  transformadores  se deslocam  até o item a ser processado."
+      },
+      {
+        "letra": "c",
+        "texto": "A operação  utiliza sistemas de produção  contínua."
+      },
+      {
+        "letra": "d",
+        "texto": "É mais  adequado  para  produção  em massa."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "52": {
+    "numero": 52,
+    "topico": 3,
+    "enunciado": "Qual  das alternativas  representa corretamente  uma  vantagem  de um arranjo  físico  funcional  (por  processo)?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Fluxo  de produção  simples e padronizado."
+      },
+      {
+        "letra": "b",
+        "texto": "Custos de movimentação  muito  baixos."
+      },
+      {
+        "letra": "c",
+        "texto": "Flexibilidade  para  atender  demandas  variadas."
+      },
+      {
+        "letra": "d",
+        "texto": "Total previsibilidade  no tempo  de ciclo."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "53": {
+    "numero": 53,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas: \nI. O arranjo  físico  por  produto  é adequado  para produção  em massa. \nII.  O arranjo  celular busca  combinar  flexibilidade  com  fluxo  contínuo. \nIII.  O arranjo  funcional  é o mais  indicado  para  volumes  elevados  e variedade  mínima. \nIV. O arranjo  posicional  favorece produtos  grandes  e complexos.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  I e III  estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  II e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "54": {
+    "numero": 54,
+    "topico": 3,
+    "enunciado": "(V/F)  No arranjo  físico  por produto,  os recursos transformadores  são organizados  em sequência  lógica  de \nprodução.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "55": {
+    "numero": 55,
+    "topico": 3,
+    "enunciado": "(V/F)  Um bom  arranjo  físico deve minimizar  atrasos,  reduzir  retrabalhos  e maximizar  o uso do  espaço.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "56": {
+    "numero": 56,
+    "topico": 3,
+    "enunciado": "De acordo  com os slides,  qual  dos seguintes  ambientes  representa  melhor  um arranjo  físico  funcional  (por \nprocesso)?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Linha  de montagem  de automóveis."
+      },
+      {
+        "letra": "b",
+        "texto": "Hospital  geral  com setores especializados."
+      },
+      {
+        "letra": "c",
+        "texto": "Construção  de uma ponte  sobre o rio."
+      },
+      {
+        "letra": "d",
+        "texto": "Refeitório  com  serviço  self-service."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "57": {
+    "numero": 57,
+    "topico": 3,
+    "enunciado": "Qual  das afirmações  descreve corretamente  o arranjo  físico  em linha  (por  produto)?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O fluxo  dos recursos  transformados  é adaptado  individualmente  para  cada  cliente."
+      },
+      {
+        "letra": "b",
+        "texto": "Os recursos  de transformação  são  agrupados  por  similaridade  técnica."
+      },
+      {
+        "letra": "c",
+        "texto": "O produto  segue  uma rota fixa  e previsível de processamento."
+      },
+      {
+        "letra": "d",
+        "texto": "As estações de trabalho  são  reconfiguradas  com  frequência."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "58": {
+    "numero": 58,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas: \nI. O arranjo  celular  busca  combinar  flexibilidade  do funcional  com  eficiência do arranjo  em linha. \nII.  No arranjo  funcional,  o fluxo  é padronizado  e previsível. \nIII.  No arranjo  por  produto,  cada  cliente segue caminhos  distintos. \nIV. No  arranjo  posicional,  o recurso transformado  permanece  fixo.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "59": {
+    "numero": 59,
+    "topico": 3,
+    "enunciado": "(V/F)  O arranjo  celular organiza  os recursos em pequenos  grupos  que  processam  famílias  de produtos \nsemelhantes.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "60": {
+    "numero": 60,
+    "topico": 3,
+    "enunciado": "(V/F)  O arranjo  funcional  é mais adequado  quando  há alta repetitividade  e previsibilidade  no  fluxo de produção.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "61": {
+    "numero": 61,
+    "topico": 3,
+    "enunciado": "De acordo  com os anexos,  qual dos  itens abaixo  NÃO é um objetivo  clássico  de um bom  arranjo  físico?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Maximizar  atrasos  no  fluxo"
+      },
+      {
+        "letra": "b",
+        "texto": "Facilitar a comunicação"
+      },
+      {
+        "letra": "c",
+        "texto": "Garantir  acessibilidade"
+      },
+      {
+        "letra": "d",
+        "texto": "Uso  eficiente do espaço"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "62": {
+    "numero": 62,
+    "topico": 3,
+    "enunciado": "Qual  das alternativas  caracteriza  corretamente  o arranjo  físico de posição  fixa?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Os recursos  transformados  percorrem  diferentes rotas conforme  suas  necessidades"
+      },
+      {
+        "letra": "b",
+        "texto": "Os recursos  de transformação  se movem até os recursos  transformados,  que permanecem  no lugar"
+      },
+      {
+        "letra": "c",
+        "texto": "Todos  os recursos  de transformação  ficam  em linha  reta"
+      },
+      {
+        "letra": "d",
+        "texto": "Os recursos  transformados  seguem  um fluxo  contínuo  e padronizado"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "63": {
+    "numero": 63,
+    "topico": 3,
+    "enunciado": "No  arranjo  físico funcional,  qual  é uma  característica  marcante?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O fluxo  é claro  e previsível"
+      },
+      {
+        "letra": "b",
+        "texto": "Não  há flexibilidade  para  diferentes rotas"
+      },
+      {
+        "letra": "c",
+        "texto": "Cada  produto  segue sempre  o mesmo  caminho"
+      },
+      {
+        "letra": "d",
+        "texto": "Os recursos  semelhantes  estão agrupados"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "64": {
+    "numero": 64,
+    "topico": 3,
+    "enunciado": "O arranjo  físico  em linha  (ou por  produto)  é mais  indicado  para  operações  com:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Baixo  volume e alta  variedade"
+      },
+      {
+        "letra": "b",
+        "texto": "Alto volume  e baixa  variedade"
+      },
+      {
+        "letra": "c",
+        "texto": "Baixo  volume e fluxo intermitente"
+      },
+      {
+        "letra": "d",
+        "texto": "Alta variedade  e fluxo  irregular"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "65": {
+    "numero": 65,
+    "topico": 3,
+    "enunciado": "Qual  das opções  abaixo  é um exemplo de arranjo  físico  celular?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Linha  de montagem  de automóveis"
+      },
+      {
+        "letra": "b",
+        "texto": "Área para  produtos  de lanches rápidos  em um supermercado"
+      },
+      {
+        "letra": "c",
+        "texto": "Construção  de uma rodovia"
+      },
+      {
+        "letra": "d",
+        "texto": "Laboratório  de pesquisa"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "66": {
+    "numero": 66,
+    "topico": 3,
+    "enunciado": "( ) O arranjo  físico funcional  é caracterizado  por  recursos semelhantes  agrupados  e diferentes fluxos  para \ndiferentes produtos  ou clientes.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "67": {
+    "numero": 67,
+    "topico": 3,
+    "enunciado": "( ) O arranjo  físico em linha  é indicado  para  operações  com  alta variedade  e baixo  volume  de produção.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "68": {
+    "numero": 68,
+    "topico": 3,
+    "enunciado": "( ) Um  bom arranjo  físico  deve considerar  a flexibilidade  a longo  prazo, permitindo  adaptações  futuras.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "69": {
+    "numero": 69,
+    "topico": 3,
+    "enunciado": "( ) No  arranjo  físico  posicional,  o produto  ou  cliente permanece  fixo, enquanto  equipamentos  e pessoas  se \nmovimentam  conforme  necessário.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "70": {
+    "numero": 70,
+    "topico": 3,
+    "enunciado": "( ) O arranjo  físico misto combina  elementos  de diferentes tipos  básicos  de arranjo  físico  em uma mesma  operação.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "71": {
+    "numero": 71,
+    "topico": 3,
+    "enunciado": "Sobre  os objetivos de um bom  arranjo  físico,  analise: \nI. Facilitar a comunicação  e coordenação \nII.  Reduzir  o trabalho  em andamento \nIII.  Minimizar  atrasos  e riscos \nIV. Garantir  flexibilidade  e uso  eficiente do  capital",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II, III  e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "72": {
+    "numero": 72,
+    "topico": 3,
+    "enunciado": "Em relação  aos tipos de arranjo  físico,  considere: \nI. O arranjo  posicional  é adequado  para  produtos  grandes  ou delicados \nII.  O arranjo  funcional  permite rotas  variadas  para  diferentes produtos \nIII.  O arranjo  em linha  é indicado  para alto  volume e padronização \nIV. O arranjo  celular  agrupa  recursos  para atender  famílias  de produtos",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II, III  e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  I e IV estão corretas"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "73": {
+    "numero": 73,
+    "topico": 3,
+    "enunciado": "Sobre  arranjo  físico  funcional,  avalie: \nI. O fluxo  é geralmente  complexo \nII.  Recursos semelhantes  são agrupados \nIII.  É indicado  para  operações  com  alta variedade \nIV. O padrão  de fluxo  é sempre  linear \n\n \n \n\f      Universidade  Federal  do Rio  de Janeiro  – UFRJ \n      Faculdade de Administração  e Ciências  Contábeis  – FACC \n      Departamento  de Administração",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "74": {
+    "numero": 74,
+    "topico": 3,
+    "enunciado": "No  contexto dos tipos  básicos  de arranjo  físico,  analise: \nI. O arranjo  em linha  facilita o controle  do fluxo \nII.  O arranjo  posicional  é comum  em projetos  de engenharia  civil \nIII.  O arranjo  celular  busca  simplificar  fluxos  complexos \nIV. O arranjo  funcional  é sempre preferível para  produção  em massa",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "75": {
+    "numero": 75,
+    "topico": 3,
+    "enunciado": "Sobre  as relações  entre volume,  variedade  e tipos de arranjo  físico,  considere: \nI. Arranjos  posicionais  são associados  a baixo  volume  e alta variedade \nII.  Arranjos  funcionais  e celulares lidam  com  volume  e variedade  médios \nIII.  Arranjos  em linha  são  típicos  de alto  volume e baixa  variedade \nIV. Arranjos  mistos combinam  características  de diferentes tipos",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II, III  e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  I e IV estão corretas"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "76": {
+    "numero": 76,
+    "topico": 3,
+    "enunciado": "Segundo  os slides de PCP, o que caracteriza  a programação  para  frente (forward  scheduling)?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Inicia  a produção  a partir  da  data de entrega e calcula  para  trás."
+      },
+      {
+        "letra": "b",
+        "texto": "É usada  apenas  em ambientes  de fluxo  contínuo."
+      },
+      {
+        "letra": "c",
+        "texto": "Agrega  as atividades  a partir  do  momento  mais recente possível."
+      },
+      {
+        "letra": "d",
+        "texto": "Inicia  a alocação  das tarefas  assim que os recursos estão disponíveis."
+      }
+    ],
+    "gabarito": "d",
+    "eh_vf": false
+  },
+  "77": {
+    "numero": 77,
+    "topico": 3,
+    "enunciado": "Sobre  os níveis de decisão  no PCP, assinale  a alternativa  correta:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O planejamento  mestre da produção  é um nível estratégico."
+      },
+      {
+        "letra": "b",
+        "texto": "A programação  da produção  é uma  atividade  tática."
+      },
+      {
+        "letra": "c",
+        "texto": "O planejamento  agregado  se localiza  no nível tático."
+      },
+      {
+        "letra": "d",
+        "texto": "O controle  da produção  ocorre  no nível estratégico."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "78": {
+    "numero": 78,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre programação  e sequenciamento: \nI. Programar  é definir  quando  e quanto  produzir. \nII.  Sequenciar  é definir  a ordem  de produção  das tarefas. \nIII.  Programação  para  trás considera  a data final  e calcula  para  trás. \nIV. Programação  para  frente é sempre  mais eficiente que a para  trás.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "79": {
+    "numero": 79,
+    "topico": 3,
+    "enunciado": "(V/F)  O PCP é responsável  por responder  o que,  quanto,  quando  e com  que recursos produzir.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "80": {
+    "numero": 80,
+    "topico": 3,
+    "enunciado": "(V/F)  O sequenciamento  do  tipo FIFO (first in, first out) prioriza  os trabalhos  mais curtos para  minimizar  o tempo  de \nprodução.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "81": {
+    "numero": 81,
+    "topico": 3,
+    "enunciado": "Qual  é a principal  diferença  entre carregamento  finito  e carregamento  infinito  no PCP?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O carregamento  finito  não  considera  prazos  de entrega."
+      },
+      {
+        "letra": "b",
+        "texto": "O carregamento  infinito  ignora  limitações  de capacidade."
+      },
+      {
+        "letra": "c",
+        "texto": "O carregamento  finito não  admite  fila de espera."
+      },
+      {
+        "letra": "d",
+        "texto": "O carregamento  infinito  aplica-se  apenas  a sistemas contínuos."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "82": {
+    "numero": 82,
+    "topico": 3,
+    "enunciado": "Assinale  a alternativa  que melhor  exemplifica  uma situação  de produção  puxada:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Um  restaurante prepara  todos  os pratos  antes dos pedidos  chegarem."
+      },
+      {
+        "letra": "b",
+        "texto": "Uma  gráfica  imprime  panfletos  conforme  solicitação  dos clientes."
+      },
+      {
+        "letra": "c",
+        "texto": "Uma  fábrica  monta  veículos com  base  em metas mensais  fixas."
+      },
+      {
+        "letra": "d",
+        "texto": "Um hospital  realiza agendamentos  antecipados  sem demanda  confirmada."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "83": {
+    "numero": 83,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre controle  da  produção: \nI. É responsável  por verificar  se as atividades  estão ocorrendo  conforme  o planejado. \nII.  Atua apenas  após  o encerramento  da produção. \nIII.  É uma  função  que  interage com  informações  do chão  de fábrica. \nIV. Permite realimentar  decisões de planejamento.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, III e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e II estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "84": {
+    "numero": 84,
+    "topico": 3,
+    "enunciado": "(V/F)  O carregamento  finito é usado  quando  se deseja garantir  que  a carga  alocada  respeite os limites de \ncapacidade  da operação.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "85": {
+    "numero": 85,
+    "topico": 3,
+    "enunciado": "(V/F)  A produção  empurrada  se baseia  em previsões e empurra  ordens  de produção  para  os processos seguintes, \nmesmo  sem demanda  real.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "86": {
+    "numero": 86,
+    "topico": 3,
+    "enunciado": "Segundo  o anexo,  o PCP (Planejamento  e Controle da  Produção)  é responsável  por:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Coordenar  apenas  o setor de compras"
+      },
+      {
+        "letra": "b",
+        "texto": "Integrar  informações  para  planejar,  programar  e controlar  a produção"
+      },
+      {
+        "letra": "c",
+        "texto": "Gerenciar  exclusivamente o estoque  de produtos  acabados"
+      },
+      {
+        "letra": "d",
+        "texto": "Supervisionar  apenas  a expedição"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "87": {
+    "numero": 87,
+    "topico": 3,
+    "enunciado": "Qual  das alternativas  NÃO corresponde  a uma  etapa  clássica  do PCP?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Previsão  de demanda"
+      },
+      {
+        "letra": "b",
+        "texto": "Planejamento  de capacidade"
+      },
+      {
+        "letra": "c",
+        "texto": "Pesquisa  de satisfação  do cliente"
+      },
+      {
+        "letra": "d",
+        "texto": "Programação  da produção"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "88": {
+    "numero": 88,
+    "topico": 3,
+    "enunciado": "No  PCP, a programação  da  produção  tem como  principal  objetivo:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Definir  a ordem,  o tempo e os recursos necessários  para  cada  operação"
+      },
+      {
+        "letra": "b",
+        "texto": "Aumentar  o estoque  máximo  possível"
+      },
+      {
+        "letra": "c",
+        "texto": "Delegar  todas  as decisões ao setor financeiro"
+      },
+      {
+        "letra": "d",
+        "texto": "Ignorar  as restrições  de capacidade"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "89": {
+    "numero": 89,
+    "topico": 3,
+    "enunciado": "O controle  da produção,  segundo  o anexo,  envolve:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  o registro  dos produtos  acabados"
+      },
+      {
+        "letra": "b",
+        "texto": "Monitorar  a execução  do plano,  identificar  desvios e propor  ações  corretivas"
+      },
+      {
+        "letra": "c",
+        "texto": "Eliminar  a necessidade  de acompanhamento  dos processos"
+      },
+      {
+        "letra": "d",
+        "texto": "Focar  somente na redução  de custos"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "90": {
+    "numero": 90,
+    "topico": 3,
+    "enunciado": "O Planejamento  Mestre da Produção  (PMP)  é definido  como:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Um  plano  de longo  prazo  para investimentos  em tecnologia"
+      },
+      {
+        "letra": "b",
+        "texto": "O detalhamento  do plano  de produção,  especificando  itens, quantidades  e períodos"
+      },
+      {
+        "letra": "c",
+        "texto": "Uma  ferramenta  exclusiva do setor de compras"
+      },
+      {
+        "letra": "d",
+        "texto": "Uma  previsão  de vendas  para  o setor comercial"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "91": {
+    "numero": 91,
+    "topico": 3,
+    "enunciado": "( ) O PCP utiliza informações  de vendas,  engenharia,  estoques e recursos humanos  para  planejar  a produção.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "92": {
+    "numero": 92,
+    "topico": 3,
+    "enunciado": "( ) O planejamento  de capacidade  no  PCP serve para  ajustar  os recursos disponíveis  à demanda  prevista.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "93": {
+    "numero": 93,
+    "topico": 3,
+    "enunciado": "( ) O controle  da produção  é dispensável  quando  o planejamento  é bem feito.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "94": {
+    "numero": 94,
+    "topico": 3,
+    "enunciado": "( ) O PCP contribui  para  o equilíbrio  entre estoques,  prazos  e custos na produção.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "95": {
+    "numero": 95,
+    "topico": 3,
+    "enunciado": "( ) O PCP é uma  atividade  isolada  e não  depende  de integração  com outros  setores da empresa.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "96": {
+    "numero": 96,
+    "topico": 3,
+    "enunciado": "Sobre  os pilares do PCP, analise: \nI. O planejamento  define  objetivos  e estratégias  para  a produção \nII.  A programação  detalha  como  e quando  a produção  ocorrerá \nIII.  O controle  monitora,  avalia e corrige  desvios do planejado \nIV. O PCP dispensa  o uso  de informações  de outras  áreas",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "97": {
+    "numero": 97,
+    "topico": 3,
+    "enunciado": "Em relação  às etapas  do PCP, considere: \nI. Previsão  de demanda \nII.  Planejamento  de produção \nIII.  Programação  da produção \nIV. Controle  e acompanhamento  da produção",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Todas  as afirmativas  estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II e III  estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "98": {
+    "numero": 98,
+    "topico": 3,
+    "enunciado": "Sobre  a importância  do PCP, avalie: \nI. Contribui  para  o uso eficiente dos recursos produtivos \nII.  Garante  o atendimento  da  demanda  com  qualidade  e prazo \nIII.  Elimina  a necessidade  de monitoramento  dos processos \nIV. Auxilia  na redução  de custos operacionais \n\n \n \n \n \n\f      Universidade  Federal  do Rio  de Janeiro  – UFRJ \n      Faculdade de Administração  e Ciências  Contábeis  – FACC \n      Departamento  de Administração",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "99": {
+    "numero": 99,
+    "topico": 3,
+    "enunciado": "No  contexto do PCP, considere: \nI. O planejamento  de capacidade  avalia  se os recursos são suficientes  para  a demanda \nII.  O sequenciamento  define  a ordem  das operações  na produção \nIII.  O controle  da  produção  envolve a identificação  de desvios e ações  corretivas \nIV. O PCP atua  apenas  no  curto prazo",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "100": {
+    "numero": 100,
+    "topico": 3,
+    "enunciado": "Sobre  os fluxos  de informação  no PCP, analise: \nI. O PCP depende  de informações  de vendas,  engenharia,  compras  e recursos  humanos \nII.  O fluxo  de informações  é unidirecional,  apenas  do PCP para  os demais  setores \nIII.  A integração  de dados  é fundamental  para  o sucesso do  PCP \nIV. O PCP pode  influenciar  decisões estratégicas  da empresa",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, III e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "101": {
+    "numero": 101,
+    "topico": 3,
+    "enunciado": "No  contexto do  Jogo do Barco,  qual  das práticas  a seguir está diretamente  associada  à redução  de desperdícios \nno fluxo  de valor?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Criação  de estoques intermediários."
+      },
+      {
+        "letra": "b",
+        "texto": "Implantação  de planejamento  empurrado."
+      },
+      {
+        "letra": "c",
+        "texto": "Uso  de indicadores  de capacidade  teórica."
+      },
+      {
+        "letra": "d",
+        "texto": "Implantação  de um sistema puxado  com  sinalização  visual (Kanban)."
+      }
+    ],
+    "gabarito": "d",
+    "eh_vf": false
+  },
+  "102": {
+    "numero": 102,
+    "topico": 3,
+    "enunciado": "De acordo  com  os princípios  do Lean observados  no Jogo do  Barco,  qual é o papel  do takt time?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Determinar  a eficiência  financeira  da operação."
+      },
+      {
+        "letra": "b",
+        "texto": "Ajustar  o ritmo de produção  à capacidade  da fábrica."
+      },
+      {
+        "letra": "c",
+        "texto": "Sincronizar  o ritmo de produção  com  a demanda  do cliente."
+      },
+      {
+        "letra": "d",
+        "texto": "Medir  o tempo  total de ciclo entre operações."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "103": {
+    "numero": 103,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre a dinâmica  do Jogo  do Barco: \nI. O sistema puxado  promove  maior  estabilidade  no fluxo  de produção. \nII.  A ausência  de indicadores  leva a decisões  menos  eficazes. \nIII.  A visibilidade  dos  gargalos  melhora  a tomada  de decisão. \nIV. A produção  em lotes grandes  reduz desperdícios.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e IV estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "104": {
+    "numero": 104,
+    "topico": 3,
+    "enunciado": "(V/F)  No Jogo  do Barco,  o excesso de WIP (work  in process)  pode  dificultar  a identificação  de gargalos.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "105": {
+    "numero": 105,
+    "topico": 3,
+    "enunciado": "(V/F)  A produção  empurrada  observada  nas  primeiras  rodadas  do Jogo  do Barco  evidenciou  aumento  da \neficiência e redução  de lead  time.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "106": {
+    "numero": 106,
+    "topico": 3,
+    "enunciado": "Qual  é a relação  entre o lead time e os gargalos  produtivos  identificada  durante  o Jogo do  Barco?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O aumento  do lead  time revela eliminação  de gargalos."
+      },
+      {
+        "letra": "b",
+        "texto": "Lead time é constante,  independentemente  dos gargalos."
+      },
+      {
+        "letra": "c",
+        "texto": "Redução  de gargalos  tende a diminuir  o lead  time."
+      },
+      {
+        "letra": "d",
+        "texto": "Lead time aumenta  quando  se adota  o sistema puxado."
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "107": {
+    "numero": 107,
+    "topico": 3,
+    "enunciado": "Durante  o Jogo do  Barco, o que se observou  quando  a produção  foi baseada  na real demanda  do  cliente?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Aumento  de estoques  em processo."
+      },
+      {
+        "letra": "b",
+        "texto": "Redução  de desperdícios  e maior  fluidez  no sistema."
+      },
+      {
+        "letra": "c",
+        "texto": "Elevação  dos tempos  de espera  e ociosidade."
+      },
+      {
+        "letra": "d",
+        "texto": "Necessidade  de buffers de segurança  em todas  as etapas."
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "108": {
+    "numero": 108,
+    "topico": 3,
+    "enunciado": "Analise  as afirmativas  sobre o uso de indicadores  no Jogo  do Barco: \nI. Permitem visualização  clara  de gargalos. \nII.  Auxiliam na  realimentação  da decisão. \nIII.  São  desnecessários  em ambientes  estáveis. \nIV. Facilitam  o alinhamento  entre áreas  da operação.",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas."
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II  e III estão corretas."
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e III estão corretas."
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  estão corretas."
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "109": {
+    "numero": 109,
+    "topico": 3,
+    "enunciado": "(V/F)  A adoção  de fluxos  contínuos,  sincronizados  com o takt time, foi mais eficaz  do que a produção  por \nempurrar  grandes  lotes.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "110": {
+    "numero": 110,
+    "topico": 3,
+    "enunciado": "(V/F)  O Kanban,  como  ferramenta  de controle  visual,  foi utilizado  para  limitar o excesso de WIP (trabalho  em \nprocesso).",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "111": {
+    "numero": 111,
+    "topico": 3,
+    "enunciado": "No  Jogo do  Barco,  qual é a principal  função  do  Mapeamento  de Fluxo  de Valor (MFV)  entre os  cenários?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Registrar  apenas  o número  de barcos  produzidos"
+      },
+      {
+        "letra": "b",
+        "texto": "Identificar  e representar  etapas  e fluxos  de material  e informação,  facilitando  melhorias  no processo"
+      },
+      {
+        "letra": "c",
+        "texto": "Definir  o arranjo  físico dos  postos de trabalho"
+      },
+      {
+        "letra": "d",
+        "texto": "Determinar  a cor  do papel  a ser utilizado"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "112": {
+    "numero": 112,
+    "topico": 3,
+    "enunciado": "Qual  das alternativas  NÃO é considerada  um critério  de qualidade  para  os barcos  produzidos,  segundo  o anexo?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Não  ter desnível entre ponta  e ponta"
+      },
+      {
+        "letra": "b",
+        "texto": "Não  ter papel rasgado"
+      },
+      {
+        "letra": "c",
+        "texto": "Não  ter papel  riscado"
+      },
+      {
+        "letra": "d",
+        "texto": "Ser produzido  no menor  tempo possível"
+      }
+    ],
+    "gabarito": "d",
+    "eh_vf": false
+  },
+  "113": {
+    "numero": 113,
+    "topico": 3,
+    "enunciado": "No  cenário  2 do  Jogo do Barco,  qual  elemento  caracteriza  o uso do Sistema  de Produção  Enxuta?",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Processamento  em grandes  lotes"
+      },
+      {
+        "letra": "b",
+        "texto": "Utilização  de posições  Kanban  entre operadores"
+      },
+      {
+        "letra": "c",
+        "texto": "Inspeção  de qualidade  em todas  as etapas"
+      },
+      {
+        "letra": "d",
+        "texto": "Arranjo  físico  circular"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "114": {
+    "numero": 114,
+    "topico": 3,
+    "enunciado": "O KPI “Lead Time”, conforme  o material,  refere-se a:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "O tempo  total para  um produto  percorrer  todas  as etapas  do processo  até a entrega ao  cliente"
+      },
+      {
+        "letra": "b",
+        "texto": "O tempo  máximo  disponível  para  produção"
+      },
+      {
+        "letra": "c",
+        "texto": "A quantidade  de colaboradores  envolvidos  no  processo"
+      },
+      {
+        "letra": "d",
+        "texto": "O número  de produtos  acabados  sem defeito"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "115": {
+    "numero": 115,
+    "topico": 3,
+    "enunciado": "Segundo  o anexo,  no  cenário  3, as equipes  devem:",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Repetir  exatamente o processo  do cenário  1"
+      },
+      {
+        "letra": "b",
+        "texto": "Planejar  livremente o sistema de produção,  obrigatoriamente  utilizando  o MFV"
+      },
+      {
+        "letra": "c",
+        "texto": "Focar  apenas  na  quantidade  produzida,  sem considerar  qualidade"
+      },
+      {
+        "letra": "d",
+        "texto": "Ignorar  os indicadores  de produtividade"
+      }
+    ],
+    "gabarito": "b",
+    "eh_vf": false
+  },
+  "116": {
+    "numero": 116,
+    "topico": 3,
+    "enunciado": "( ) O arranjo  físico  da linha  de produção  deve ser em linha,  do almoxarifado  ao controle  de qualidade,  em todos \nos cenários  do Jogo  do Barco.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Falso",
+    "eh_vf": true
+  },
+  "117": {
+    "numero": 117,
+    "topico": 3,
+    "enunciado": "( ) O KPI “Work  in Process” representa  a quantidade  de barcos  incompletos  na linha  ao  final do  turno  de \nprodução.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "118": {
+    "numero": 118,
+    "topico": 3,
+    "enunciado": "( ) A inspeção  de qualidade  no cenário  1 ocorre  somente no  produto  final.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "119": {
+    "numero": 119,
+    "topico": 3,
+    "enunciado": "( ) No Sistema de Produção  Enxuta,  o uso de Kanban  ajuda  a limitar  o estoque  em processo entre as etapas.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "120": {
+    "numero": 120,
+    "topico": 3,
+    "enunciado": "( ) O cálculo  do Takt  Time é feito dividindo-se  o tempo  disponível  para  produção  pela  demanda  do  cliente.",
+    "alternativas": [
+      {
+        "letra": "v",
+        "texto": "Verdadeiro"
+      },
+      {
+        "letra": "f",
+        "texto": "Falso"
+      }
+    ],
+    "gabarito": "Verdadeiro",
+    "eh_vf": true
+  },
+  "121": {
+    "numero": 121,
+    "topico": 3,
+    "enunciado": "Sobre  os KPIs utilizados  no  Jogo do Barco,  analise: \nI. Taxa  efetiva de produção  mede quantos  barcos  sem defeito são  produzidos  por  unidade  de tempo \nII.  Lead Time indica  o tempo  total do ciclo do produto \nIII.  Work in Process refere-se ao estoque  de barcos  em processo \nIV. Takt  Time mostra  o tempo disponível  por unidade  demandada",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e IV estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, II, III  e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "c",
+    "eh_vf": false
+  },
+  "122": {
+    "numero": 122,
+    "topico": 3,
+    "enunciado": "Em relação  aos critérios de qualidade  dos barcos,  considere: \nI. Não  pode  haver papel  rasgado \nII.  Não  pode haver  papel  riscado \nIII.  Não  pode  haver papel  amassado \nIV. Não  pode  haver desnível  entre ponta  e ponta",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I, III e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Todas  as afirmativas  estão corretas"
+      }
+    ],
+    "gabarito": "d",
+    "eh_vf": false
+  },
+  "123": {
+    "numero": 123,
+    "topico": 3,
+    "enunciado": "No  contexto do  Jogo do Barco,  analise: \nI. O gerente deve apurar  os indicadores  de produtividade  e qualidade  ao final  de cada  cenário \nII.  A inspeção  de qualidade  pode ser feita por mais de um supervisor \nIII.  O planejamento  do cenário  3 deve obrigatoriamente  utilizar o MFV \nIV. Os operadores  de produção  podem  ignorar  os critérios  de qualidade \n\n \n \n \n\f      Universidade  Federal  do Rio  de Janeiro  – UFRJ \n      Faculdade de Administração  e Ciências  Contábeis  – FACC \n      Departamento  de Administração",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "124": {
+    "numero": 124,
+    "topico": 3,
+    "enunciado": "Sobre  o funcionamento  das  posições  Kanban  no cenário  2, avalie: \nI. Cada  operador  só pode  transferir  um barco  se houver  espaço  livre no  Kanban \nII.  Se ambos  os Kanbans  estiverem ocupados,  o operador  anterior  deve aguardar \nIII.  O Kanban  limita o estoque em processo  entre as etapas \nIV. O Kanban  elimina  a necessidade  de controle  de qualidade",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  },
+  "125": {
+    "numero": 125,
+    "topico": 3,
+    "enunciado": "Em relação  ao planejamento  do cenário  3, considere: \nI. A equipe pode  definir  o tipo de sistema de produção \nII.  O lote de transferência  pode  ser ajustado \nIII.  O layout  pode ser planejado  livremente \nIV. O uso do MFV é opcional",
+    "alternativas": [
+      {
+        "letra": "a",
+        "texto": "Apenas  I, II e III estão corretas"
+      },
+      {
+        "letra": "b",
+        "texto": "Apenas  II,  III  e IV estão corretas"
+      },
+      {
+        "letra": "c",
+        "texto": "Apenas  I e IV estão corretas"
+      },
+      {
+        "letra": "d",
+        "texto": "Apenas  III  e IV estão corretas"
+      }
+    ],
+    "gabarito": "a",
+    "eh_vf": false
+  }
+}
