@@ -39,10 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('start-btn');
     const studentNameInput = document.getElementById('student-name');
     
-    startBtn.addEventListener('click', () => {
+    startBtn.addEventListener('click', function() {
         studentName = studentNameInput.value.trim() || 'Aluno';
         welcomeName.textContent = studentName;
         showScreen(introScreen);
+        console.log("Botão Começar clicado, tentando mostrar tela de introdução");
     });
     
     // Adicionar event listeners aos botões de tópicos
@@ -528,7 +529,7 @@ function goToIntroScreen() {
     showScreen(introScreen);
 }
 
-// Funç// Função para mostrar uma tela específica
+// Função para mostrar uma tela específica
 function showScreen(screen) {
     // Esconder todas as telas
     loginScreen.classList.remove('active');
@@ -539,7 +540,7 @@ function showScreen(screen) {
     
     // Mostrar a tela especificada
     screen.classList.add('active');
-}    
+    
     // Resetar botão de verificação se voltando para o quiz
     if (screen === quizScreen && !reviewMode) {
         submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
