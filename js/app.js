@@ -19,94 +19,23 @@ const quizConfig = {
   }
 };
 
-// Elementos DOM
-const loginScreen = document.getElementById('login-screen');
-const introScreen = document.getElementById('intro-screen');
-const quizScreen = document.getElementById('quiz-screen');
-const resultScreen = document.getElementById('result-screen');
-const reviewScreen = document.getElementById('review-screen');
-
-const welcomeName = document.getElementById('welcome-name');
-const topicTitle = document.getElementById('topic-title');
-const questionCounter = document.getElementById('question-counter');
-const progressBar = document.getElementById('progress-bar');
-const questionText = document.getElementById('question-text');
-const optionsContainer = document.getElementById('options-container');
-
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const submitBtn = document.getElementById('submit-btn');
-
-const scoreValue = document.getElementById('score-value');
-const scoreMessage = document.getElementById('score-message');
-const resultBreakdown = document.getElementById('result-breakdown');
-const reviewBtn = document.getElementById('review-btn');
-const restartBtn = document.getElementById('restart-btn');
-const backToResultsBtn = document.getElementById('back-to-results');
-const reviewContainer = document.getElementById('review-container');
-
 // Função para mostrar uma tela e esconder as outras
 function showScreen(screen) {
     console.log("Mostrando tela:", screen.id);
     
     // Esconder todas as telas
-    loginScreen.classList.remove('active');
-    introScreen.classList.remove('active');
-    quizScreen.classList.remove('active');
-    resultScreen.classList.remove('active');
-    reviewScreen.classList.remove('active');
+    document.querySelectorAll('.screen').forEach(s => {
+        s.classList.remove('active');
+    });
     
     // Mostrar a tela desejada
     screen.classList.add('active');
 }
 
-// Inicialização
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM carregado, inicializando quiz...");
-    
-    // Event listener para o botão de início
-    const startBtn = document.getElementById('start-btn');
-    const studentNameInput = document.getElementById('student-name');
-    
-    startBtn.addEventListener('click', function() {
-        console.log("Botão Começar clicado");
-        studentName = studentNameInput.value.trim() || 'Aluno';
-        welcomeName.textContent = studentName;
-        loginTime = new Date();
-        
-        // Registrar login (poderia ser enviado para um servidor)
-        console.log(`Login: ${studentName}, Data: ${loginTime.toLocaleString()}`);
-        
-        // Mostrar a tela de introdução
-        showScreen(introScreen);
-    });
-    
-    // Adicionar event listeners aos botões de tópicos
-    const topicButtons = document.querySelectorAll('.topic-btn');
-    topicButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            currentTopic = button.getAttribute('data-topic');
-            console.log("Tópico selecionado:", currentTopic);
-            startQuiz(currentTopic);
-        });
-    });
-
-    // Event listeners para navegação
-    prevBtn.addEventListener('click', showPreviousQuestion);
-    nextBtn.addEventListener('click', showNextQuestion);
-    submitBtn.addEventListener('click', checkAnswer);
-    reviewBtn.addEventListener('click', showReviewScreen);
-    restartBtn.addEventListener('click', goToIntroScreen);
-    backToResultsBtn.addEventListener('click', showResultScreen);
-    
-    // Event listener para o botão Voltar ao Menu
-    const homeBtn = document.getElementById('home-btn');
-    homeBtn.addEventListener('click', goToIntroScreen);
-});
-
 // Iniciar o quiz com o tópico selecionado
 function startQuiz(topic) {
     console.log("Iniciando quiz com tópico:", topic);
+    currentTopic = topic;
     currentQuestions = questions[topic];
     currentQuestionIndex = 0;
     userAnswers = Array(currentQuestions.length).fill(null);
@@ -114,10 +43,10 @@ function startQuiz(topic) {
     reviewMode = false;
 
     // Atualizar título do tópico
-    topicTitle.textContent = quizConfig.topicNames[topic];
+    document.getElementById('topic-title').textContent = quizConfig.topicNames[topic];
 
     // Mostrar a tela do quiz
-    showScreen(quizScreen);
+    showScreen(document.getElementById('quiz-screen'));
     
     // Mostrar a primeira questão
     showQuestion(0);
@@ -129,13 +58,14 @@ function showQuestion(index) {
     const question = currentQuestions[index];
     
     // Atualizar contador e barra de progresso
-    questionCounter.textContent = `Questão ${index + 1} de ${currentQuestions.length}`;
-    progressBar.style.width = `${((index + 1) / currentQuestions.length) * 100}%`;
+    document.getElementById('question-counter').textContent = `Questão ${index + 1} de ${currentQuestions.length}`;
+    document.getElementById('progress-bar').style.width = `${((index + 1) / currentQuestions.length) * 100}%`;
     
     // Atualizar texto da questão
-    questionText.innerHTML = question.question;
+    document.getElementById('question-text').innerHTML = question.question;
     
     // Limpar e preencher opções
+    const optionsContainer = document.getElementById('options-container');
     optionsContainer.innerHTML = '';
     
     if (question.type === 'multiple') {
@@ -163,8 +93,8 @@ function showQuestion(index) {
     optionsContainer.appendChild(explanationDiv);
     
     // Atualizar estado dos botões de navegação
-    prevBtn.disabled = index === 0;
-    nextBtn.disabled = index === currentQuestions.length - 1;
+    document.getElementById('prev-btn').disabled = index === 0;
+    document.getElementById('next-btn').disabled = index === currentQuestions.length - 1;
     
     // Se estiver em modo de revisão, mostrar respostas e explicações
     if (reviewMode) {
@@ -190,8 +120,15 @@ function showQuestion(index) {
         }
         
         // Configurar botão de verificação
+        const submitBtn = document.getElementById('submit-btn');
         submitBtn.textContent = userAnswers[index] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
-        submitBtn.onclick = checkAnswer;
+        
+        // Remover todos os event listeners anteriores
+        const newSubmitBtn = submitBtn.cloneNode(true);
+        submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
+        
+        // Adicionar novo event listener
+        newSubmitBtn.addEventListener('click', checkAnswer);
     }
 }
 
@@ -235,24 +172,6 @@ function createMultipleChoiceOption(text, optionIndex, questionIndex) {
             if (radioInput) {
                 radioInput.checked = true;
             }
-            
-            // Armazenar resposta do usuário
-            userAnswers[questionIndex] = optionIndex;
-        });
-        
-        // Adicionar evento de clique também ao input
-        input.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evitar propagação para o div pai
-            console.log("Input radio selecionado:", optionIndex);
-            
-            // Remover seleção anterior
-            const options = document.querySelectorAll('.option');
-            options.forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // Marcar esta opção como selecionada
-            optionDiv.classList.add('selected');
             
             // Armazenar resposta do usuário
             userAnswers[questionIndex] = optionIndex;
@@ -302,24 +221,6 @@ function createTrueFalseOption(text, value, questionIndex) {
             if (radioInput) {
                 radioInput.checked = true;
             }
-            
-            // Armazenar resposta do usuário
-            userAnswers[questionIndex] = value;
-        });
-        
-        // Adicionar evento de clique também ao input
-        input.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evitar propagação para o div pai
-            console.log("Input radio V/F selecionado:", value);
-            
-            // Remover seleção anterior
-            const options = document.querySelectorAll('.option');
-            options.forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // Marcar esta opção como selecionada
-            optionDiv.classList.add('selected');
             
             // Armazenar resposta do usuário
             userAnswers[questionIndex] = value;
@@ -386,13 +287,15 @@ function checkAnswer() {
     });
     
     // Mudar texto do botão para próxima questão
+    const submitBtn = document.getElementById('submit-btn');
     submitBtn.textContent = 'Próxima Questão';
     
     // Remover todos os event listeners anteriores
-    submitBtn.onclick = null;
+    const newSubmitBtn = submitBtn.cloneNode(true);
+    submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
     
     // Adicionar novo event listener para o botão de próxima questão
-    submitBtn.addEventListener('click', function nextQuestionHandler() {
+    newSubmitBtn.addEventListener('click', function nextQuestionHandler() {
         console.log("Avançando para próxima questão após verificação");
         if (currentQuestionIndex < currentQuestions.length - 1) {
             showNextQuestion();
@@ -400,9 +303,6 @@ function checkAnswer() {
             calculateScore();
             showResultScreen();
         }
-        
-        // Remover este event listener após uso
-        submitBtn.removeEventListener('click', nextQuestionHandler);
     });
 }
 
@@ -419,13 +319,6 @@ function showNextQuestion() {
     if (currentQuestionIndex < currentQuestions.length - 1) {
         currentQuestionIndex++;
         showQuestion(currentQuestionIndex);
-        
-        // Resetar o botão de verificação
-        submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
-        
-        // Remover todos os event listeners anteriores
-        submitBtn.onclick = null;
-        submitBtn.addEventListener('click', checkAnswer);
     }
 }
 
@@ -467,34 +360,31 @@ function goToIntroScreen() {
     reviewMode = false;
     
     // Mostrar a tela inicial
-    showScreen(introScreen);
-    
-    // Resetar o botão de verificação
-    submitBtn.textContent = 'Verificar Resposta';
-    submitBtn.onclick = null;
-    submitBtn.addEventListener('click', checkAnswer);
+    showScreen(document.getElementById('intro-screen'));
 }
 
 // Mostrar tela de resultados
 function showResultScreen() {
     console.log("Mostrando tela de resultados");
     // Atualizar pontuação
-    scoreValue.textContent = score;
+    document.getElementById('score-value').textContent = score;
     
     // Definir mensagem com base na pontuação
     const percentage = (score / currentQuestions.length) * 100;
     if (percentage >= 90) {
-        scoreMessage.textContent = 'Excelente! Você domina o assunto!';
+        document.getElementById('score-message').textContent = 'Excelente! Você domina o assunto!';
     } else if (percentage >= 70) {
-        scoreMessage.textContent = 'Muito bom! Você tem um bom conhecimento!';
+        document.getElementById('score-message').textContent = 'Muito bom! Você tem um bom conhecimento!';
     } else if (percentage >= 50) {
-        scoreMessage.textContent = 'Bom! Continue estudando para melhorar.';
+        document.getElementById('score-message').textContent = 'Bom! Continue estudando para melhorar.';
     } else {
-        scoreMessage.textContent = 'Continue estudando. Você pode melhorar!';
+        document.getElementById('score-message').textContent = 'Continue estudando. Você pode melhorar!';
     }
     
     // Preencher detalhes do desempenho
+    const resultBreakdown = document.getElementById('result-breakdown');
     resultBreakdown.innerHTML = '';
+    
     currentQuestions.forEach((question, index) => {
         const userAnswer = userAnswers[index];
         
@@ -546,18 +436,17 @@ function showResultScreen() {
         const now = new Date();
         const timeSpent = Math.round((now - loginTime) / 1000 / 60); // em minutos
         console.log(`Usuário: ${studentName}, Tempo de uso: ${timeSpent} minutos`);
-        
-        // Aqui poderia ser implementado o envio desses dados para uma planilha ou servidor
     }
     
     // Mostrar tela de resultados
-    showScreen(resultScreen);
+    showScreen(document.getElementById('result-screen'));
 }
 
 // Mostrar tela de revisão
 function showReviewScreen() {
     console.log("Mostrando tela de revisão");
     reviewMode = true;
+    const reviewContainer = document.getElementById('review-container');
     reviewContainer.innerHTML = '';
     
     currentQuestions.forEach((question, index) => {
@@ -645,7 +534,7 @@ function showReviewScreen() {
         reviewContainer.appendChild(reviewQuestion);
     });
     
-    showScreen(reviewScreen);
+    showScreen(document.getElementById('review-screen'));
 }
 
 // Mostrar resposta em modo de revisão
@@ -692,5 +581,81 @@ function showAnswerInReviewMode(index) {
     });
     
     explanation.classList.add('show');
-    submitBtn.style.display = 'none';
+    document.getElementById('submit-btn').style.display = 'none';
+}
+
+// Inicialização - Garantir que os event listeners sejam registrados
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM carregado, inicializando quiz...");
+    
+    // Event listener para o botão de início
+    const startBtn = document.getElementById('start-btn');
+    const studentNameInput = document.getElementById('student-name');
+    
+    if (startBtn) {
+        startBtn.addEventListener('click', function() {
+            console.log("Botão Começar clicado");
+            studentName = studentNameInput.value.trim() || 'Aluno';
+            const welcomeName = document.getElementById('welcome-name');
+            if (welcomeName) {
+                welcomeName.textContent = studentName;
+            }
+            loginTime = new Date();
+            
+            // Registrar login (poderia ser enviado para um servidor)
+            console.log(`Login: ${studentName}, Data: ${loginTime.toLocaleString()}`);
+            
+            // Mostrar a tela de introdução
+            showScreen(document.getElementById('intro-screen'));
+        });
+    }
+    
+    // Adicionar event listeners aos botões de tópicos
+    const topicButtons = document.querySelectorAll('.topic-btn');
+    console.log("Botões de tópicos encontrados:", topicButtons.length);
+    
+    topicButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const topic = this.getAttribute('data-topic');
+            console.log("Tópico selecionado:", topic);
+            startQuiz(topic);
+        });
+    });
+
+    // Event listeners para navegação
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const submitBtn = document.getElementById('submit-btn');
+    const reviewBtn = document.getElementById('review-btn');
+    const restartBtn = document.getElementById('restart-btn');
+    const backToResultsBtn = document.getElementById('back-to-results');
+    
+    if (prevBtn) prevBtn.addEventListener('click', showPreviousQuestion);
+    if (nextBtn) nextBtn.addEventListener('click', showNextQuestion);
+    if (submitBtn) submitBtn.addEventListener('click', checkAnswer);
+    if (reviewBtn) reviewBtn.addEventListener('click', showReviewScreen);
+    if (restartBtn) restartBtn.addEventListener('click', goToIntroScreen);
+    if (backToResultsBtn) backToResultsBtn.addEventListener('click', function() {
+        showScreen(document.getElementById('result-screen'));
+    });
+    
+    // Event listener para o botão Voltar ao Menu
+    const homeBtn = document.getElementById('home-btn');
+    if (homeBtn) {
+        homeBtn.addEventListener('click', goToIntroScreen);
+    }
+    
+    console.log("Inicialização do quiz concluída!");
+});
+
+// Garantir que o script seja executado mesmo se o evento DOMContentLoaded já tiver ocorrido
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log("DOM ainda carregando, aguardando...");
+    });
+} else {
+    console.log("DOM já carregado, executando inicialização imediatamente...");
+    // Simular o evento DOMContentLoaded
+    const event = new Event('DOMContentLoaded');
+    document.dispatchEvent(event);
 }
