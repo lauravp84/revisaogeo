@@ -7,6 +7,47 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        // Script inline para garantir que o login funcione
+        document.addEventListener('DOMContentLoaded', function() {
+            // Elementos DOM principais
+            const loginScreen = document.getElementById('login-screen');
+            const introScreen = document.getElementById('intro-screen');
+            const welcomeName = document.getElementById('welcome-name');
+            
+            // Elementos do formulário de login
+            const startBtn = document.getElementById('start-btn');
+            const studentNameInput = document.getElementById('student-name');
+            
+            // Função para mostrar uma tela e esconder as outras
+            function showScreen(screenToShow) {
+                document.querySelectorAll('.screen').forEach(screen => {
+                    screen.classList.remove('active');
+                });
+                screenToShow.classList.add('active');
+            }
+            
+            // Event listener para o botão de início
+            startBtn.addEventListener('click', function() {
+                const name = studentNameInput.value.trim() || 'Aluno';
+                welcomeName.textContent = name;
+                
+                // Armazenar o nome no localStorage para persistência
+                localStorage.setItem('studentName', name);
+                localStorage.setItem('loginTime', new Date().toString());
+                
+                // Mostrar a tela de introdução
+                showScreen(introScreen);
+            });
+            
+            // Permitir também pressionar Enter para fazer login
+            studentNameInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    startBtn.click();
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
