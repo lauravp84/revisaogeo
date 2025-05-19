@@ -12,12 +12,24 @@
         <header>
             <h1>Quiz de Gestão Estratégica de Operações</h1>
             <p class="subtitle">Teste seus conhecimentos em GEO</p>
+            <p class="author">Profª Laura Valencia / UFRJ</p>
         </header>
 
-        <div id="intro-screen" class="screen active">
-            <div class="intro-content">
+        <div id="login-screen" class="screen active">
+            <div class="login-content">
                 <h2>Bem-vindo ao Quiz de GEO!</h2>
-                <p>Este quiz contém questões sobre Gestão Estratégica de Operações divididas em 5 tópicos.</p>
+                <p>Por favor, digite seu nome para começar:</p>
+                <div class="login-form">
+                    <input type="text" id="student-name" placeholder="Seu nome">
+                    <button id="start-btn" class="action-btn">Começar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="intro-screen" class="screen">
+            <div class="intro-content">
+                <h2>Olá, <span id="welcome-name">Aluno</span>!</h2>
+                <p>Este quiz contém questões sobre Gestão Estratégica de Operações divididas em 7 tópicos.</p>
                 <p>Escolha um tópico para começar:</p>
                 
                 <div class="topic-grid">
@@ -41,13 +53,20 @@
                         <i class="fas fa-project-diagram"></i>
                         <span>Tópico 5</span>
                     </button>
+                    <button class="topic-btn" data-topic="topic6">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Tópico 6</span>
+                    </button>
+                    <button class="topic-btn" data-topic="topic8">
+                        <i class="fas fa-ship"></i>
+                        <span>Tópico 8</span>
+                    </button>
                 </div>
                 
                 <div class="instructions">
                     <h3>Instruções:</h3>
                     <ul>
-                        <li>Cada tópico contém 15 questões</li>
-                        <li>Você encontrará questões de múltipla escolha, verdadeiro/falso e múltipla assertiva</li>
+                        <li>Cada tópico contém questões de múltipla escolha, verdadeiro/falso e múltipla assertiva</li>
                         <li>Após responder, você verá a explicação da resposta correta</li>
                         <li>Ao final, você receberá sua pontuação</li>
                     </ul>

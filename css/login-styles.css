@@ -1,0 +1,32 @@
+.author {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a tela de login */
+.login-content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.login-form {
+    margin-top: 30px;
+}
+
+.login-form input {
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#start-btn {
+    display: block;
+    margin: 0 auto;
+}

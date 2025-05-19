@@ -5,13 +5,16 @@ let currentQuestionIndex = 0;
 let userAnswers = [];
 let score = 0;
 let reviewMode = false;
+let studentName = '';
 
 // Elementos DOM
+const loginScreen = document.getElementById('login-screen');
 const introScreen = document.getElementById('intro-screen');
 const quizScreen = document.getElementById('quiz-screen');
 const resultScreen = document.getElementById('result-screen');
 const reviewScreen = document.getElementById('review-screen');
 
+const welcomeName = document.getElementById('welcome-name');
 const topicTitle = document.getElementById('topic-title');
 const questionCounter = document.getElementById('question-counter');
 const progressBar = document.getElementById('progress-bar');
@@ -32,6 +35,16 @@ const reviewContainer = document.getElementById('review-container');
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
+    // Event listener para o botão de início
+    const startBtn = document.getElementById('start-btn');
+    const studentNameInput = document.getElementById('student-name');
+    
+    startBtn.addEventListener('click', () => {
+        studentName = studentNameInput.value.trim() || 'Aluno';
+        welcomeName.textContent = studentName;
+        showScreen(introScreen);
+    });
+    
     // Adicionar event listeners aos botões de tópicos
     const topicButtons = document.querySelectorAll('.topic-btn');
     topicButtons.forEach(button => {
@@ -253,14 +266,20 @@ function checkAnswer() {
     // Mudar texto do botão para próxima questão
     submitBtn.textContent = 'Próxima Questão';
     submitBtn.removeEventListener('click', checkAnswer);
-    submitBtn.addEventListener('click', () => {
+    
+    // Adicionar novo event listener para o botão de próxima questão
+    const nextQuestionHandler = function() {
         if (currentQuestionIndex < currentQuestions.length - 1) {
             showNextQuestion();
         } else {
             calculateScore();
             showResultScreen();
         }
-    });
+        // Remover este event listener após uso para evitar duplicação
+        submitBtn.removeEventListener('click', nextQuestionHandler);
+    };
+    
+    submitBtn.addEventListener('click', nextQuestionHandler);
 }
 
 // Mostrar questão anterior
@@ -279,7 +298,12 @@ function showNextQuestion() {
         
         // Resetar o botão de verificação
         submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
+        
+        // Remover todos os event listeners anteriores e adicionar o correto
         submitBtn.removeEventListener('click', showNextQuestion);
+        const elClone = submitBtn.cloneNode(true);
+        submitBtn.parentNode.replaceChild(elClone, submitBtn);
+        submitBtn = elClone;
         submitBtn.addEventListener('click', checkAnswer);
     }
 }
@@ -504,9 +528,10 @@ function goToIntroScreen() {
     showScreen(introScreen);
 }
 
-// Função auxiliar para mostrar uma tela específica
+// Funç// Função para mostrar uma tela específica
 function showScreen(screen) {
-    // Ocultar todas as telas
+    // Esconder todas as telas
+    loginScreen.classList.remove('active');
     introScreen.classList.remove('active');
     quizScreen.classList.remove('active');
     resultScreen.classList.remove('active');
@@ -514,7 +539,7 @@ function showScreen(screen) {
     
     // Mostrar a tela especificada
     screen.classList.add('active');
-    
+}    
     // Resetar botão de verificação se voltando para o quiz
     if (screen === quizScreen && !reviewMode) {
         submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
