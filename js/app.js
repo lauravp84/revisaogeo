@@ -6,6 +6,7 @@ let userAnswers = [];
 let score = 0;
 let reviewMode = false;
 let studentName = '';
+let loginTime = null;
 
 // Elementos DOM
 const loginScreen = document.getElementById('login-screen');
@@ -33,6 +34,19 @@ const restartBtn = document.getElementById('restart-btn');
 const backToResultsBtn = document.getElementById('back-to-results');
 const reviewContainer = document.getElementById('review-container');
 
+// Função para mostrar uma tela e esconder as outras
+function showScreen(screen) {
+    // Esconder todas as telas
+    loginScreen.classList.remove('active');
+    introScreen.classList.remove('active');
+    quizScreen.classList.remove('active');
+    resultScreen.classList.remove('active');
+    reviewScreen.classList.remove('active');
+    
+    // Mostrar a tela desejada
+    screen.classList.add('active');
+}
+
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
     // Event listener para o botão de início
@@ -42,8 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
     startBtn.addEventListener('click', function() {
         studentName = studentNameInput.value.trim() || 'Aluno';
         welcomeName.textContent = studentName;
+        loginTime = new Date();
+        
+        // Registrar login (poderia ser enviado para um servidor)
+        console.log(`Login: ${studentName}, Data: ${loginTime.toLocaleString()}`);
+        
         showScreen(introScreen);
-        console.log("Botão Começar clicado, tentando mostrar tela de introdução");
     });
     
     // Adicionar event listeners aos botões de tópicos
@@ -388,6 +406,15 @@ function showResultScreen() {
         resultBreakdown.appendChild(resultItem);
     });
     
+    // Registrar tempo de uso
+    if (loginTime) {
+        const now = new Date();
+        const timeSpent = Math.round((now - loginTime) / 1000 / 60); // em minutos
+        console.log(`Usuário: ${studentName}, Tempo de uso: ${timeSpent} minutos`);
+        
+        // Aqui poderia ser implementado o envio desses dados para uma planilha ou servidor
+    }
+    
     // Mostrar tela de resultados
     showScreen(resultScreen);
 }
@@ -448,11 +475,13 @@ function showReviewScreen() {
                 falseOption.classList.add('correct');
             }
             
-            if (userAnswer === true && question.answer === false) {
-                trueOption.classList.add('incorrect', 'selected');
-            } else if (userAnswer === false && question.answer === true) {
-                falseOption.classList.add('incorrect', 'selected');
-            } else if (userAnswer === true) {
+            if (userAnswer === true && question.answer !== true) {
+                trueOption.classList.add('incorrect');
+            } else if (userAnswer === false && question.answer !== false) {
+                falseOption.classList.add('incorrect');
+            }
+            
+            if (userAnswer === true) {
                 trueOption.classList.add('selected');
             } else if (userAnswer === false) {
                 falseOption.classList.add('selected');
@@ -475,77 +504,45 @@ function showReviewScreen() {
     showScreen(reviewScreen);
 }
 
-// Mostrar respostas no modo de revisão
+// Mostrar resposta em modo de revisão
 function showAnswerInReviewMode(index) {
-    const question = currentQuestions[index];
+    const currentQuestion = currentQuestions[index];
     const userAnswer = userAnswers[index];
     
     const options = document.querySelectorAll('.option');
     const explanation = document.getElementById('explanation');
     
-    // Marcar resposta correta e incorreta
     options.forEach((option) => {
         const optionIndex = option.getAttribute('data-index');
         const isCorrect = 
-            (question.type === 'truefalse' && 
-             ((optionIndex === 'true' && question.answer === true) || 
-              (optionIndex === 'false' && question.answer === false))) ||
-            (question.type !== 'truefalse' && parseInt(optionIndex) === question.answer);
+            (currentQuestion.type === 'truefalse' && 
+             ((optionIndex === 'true' && currentQuestion.answer === true) || 
+              (optionIndex === 'false' && currentQuestion.answer === false))) ||
+            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === currentQuestion.answer);
         
         if (isCorrect) {
             option.classList.add('correct');
         } else if (
-            (question.type === 'truefalse' && 
+            (currentQuestion.type === 'truefalse' && 
              ((optionIndex === 'true' && userAnswer === true) || 
               (optionIndex === 'false' && userAnswer === false))) ||
-            (question.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
+            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
         ) {
             option.classList.add('incorrect');
         }
         
-        // Marcar a opção selecionada pelo usuário
         if (
-            (question.type === 'truefalse' && 
+            (currentQuestion.type === 'truefalse' && 
              ((optionIndex === 'true' && userAnswer === true) || 
               (optionIndex === 'false' && userAnswer === false))) ||
-            (question.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
+            (currentQuestion.type !== 'truefalse' && parseInt(optionIndex) === userAnswer)
         ) {
             option.classList.add('selected');
         }
         
-        // Desabilitar cliques
         option.style.pointerEvents = 'none';
     });
     
-    // Mostrar explicação
     explanation.classList.add('show');
-    
-    // Ocultar botão de verificação
     submitBtn.style.display = 'none';
-}
-
-// Voltar para a tela inicial
-function goToIntroScreen() {
-    showScreen(introScreen);
-}
-
-// Função para mostrar uma tela específica
-function showScreen(screen) {
-    // Esconder todas as telas
-    loginScreen.classList.remove('active');
-    introScreen.classList.remove('active');
-    quizScreen.classList.remove('active');
-    resultScreen.classList.remove('active');
-    reviewScreen.classList.remove('active');
-    
-    // Mostrar a tela especificada
-    screen.classList.add('active');
-    
-    // Resetar botão de verificação se voltando para o quiz
-    if (screen === quizScreen && !reviewMode) {
-        submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
-        submitBtn.style.display = 'block';
-        submitBtn.removeEventListener('click', showNextQuestion);
-        submitBtn.addEventListener('click', checkAnswer);
-    }
 }

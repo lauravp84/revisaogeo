@@ -19,9 +19,9 @@
         <div id="login-screen" class="screen active">
             <div class="login-content">
                 <h2>Bem-vindo ao Quiz de GEO!</h2>
-                <p>Por favor, digite seu nome para começar:</p>
+                <p>Por favor, digite seu nome completo para começar:</p>
                 <div class="login-form">
-                    <input type="text" id="student-name" placeholder="Seu nome">
+                    <input type="text" id="student-name" placeholder="Seu nome completo">
                     <button id="start-btn" class="action-btn">Começar</button>
                 </div>
             </div>
@@ -30,44 +30,36 @@
         <div id="intro-screen" class="screen">
             <div class="intro-content">
                 <h2>Olá, <span id="welcome-name">Aluno</span>!</h2>
-                <p>Este quiz contém questões sobre Gestão Estratégica de Operações divididas em 7 tópicos.</p>
+                <p>Este quiz contém questões sobre Gestão Estratégica de Operações divididas em 5 tópicos.</p>
                 <p>Escolha um tópico para começar:</p>
                 
                 <div class="topic-grid">
-                    <button class="topic-btn" data-topic="topic1">
-                        <i class="fas fa-chart-line"></i>
-                        <span>Tópico 1</span>
-                    </button>
-                    <button class="topic-btn" data-topic="topic2">
-                        <i class="fas fa-cogs"></i>
-                        <span>Tópico 2</span>
-                    </button>
                     <button class="topic-btn" data-topic="topic3">
                         <i class="fas fa-tasks"></i>
-                        <span>Tópico 3</span>
+                        <span>Tópico 3: Introdução à GEO</span>
                     </button>
                     <button class="topic-btn" data-topic="topic4">
                         <i class="fas fa-industry"></i>
-                        <span>Tópico 4</span>
+                        <span>Tópico 4: Localização Industrial</span>
                     </button>
                     <button class="topic-btn" data-topic="topic5">
                         <i class="fas fa-project-diagram"></i>
-                        <span>Tópico 5</span>
+                        <span>Tópico 5: Arranjo Físico</span>
                     </button>
                     <button class="topic-btn" data-topic="topic6">
                         <i class="fas fa-calendar-check"></i>
-                        <span>Tópico 6</span>
+                        <span>Tópico 6: PCP</span>
                     </button>
                     <button class="topic-btn" data-topic="topic8">
                         <i class="fas fa-ship"></i>
-                        <span>Tópico 8</span>
+                        <span>Tópico 8: Jogo do Barco</span>
                     </button>
                 </div>
                 
                 <div class="instructions">
                     <h3>Instruções:</h3>
                     <ul>
-                        <li>Cada tópico contém questões de múltipla escolha, verdadeiro/falso e múltipla assertiva</li>
+                        <li>Cada tópico contém 25 questões de múltipla escolha, verdadeiro/falso e múltipla assertiva</li>
                         <li>Após responder, você verá a explicação da resposta correta</li>
                         <li>Ao final, você receberá sua pontuação</li>
                     </ul>
@@ -82,7 +74,7 @@
                     <div class="progress-bar">
                         <div class="progress" id="progress-bar"></div>
                     </div>
-                    <span id="question-counter">Questão 1 de 15</span>
+                    <span id="question-counter">Questão 1 de 25</span>
                 </div>
             </div>
 
@@ -109,7 +101,7 @@
                 <div class="score-container">
                     <div class="score-circle">
                         <span id="score-value">0</span>
-                        <span class="score-total">/15</span>
+                        <span class="score-total">/25</span>
                     </div>
                     <p id="score-message">Mensagem baseada na pontuação</p>
                 </div>
