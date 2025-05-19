@@ -47,6 +47,8 @@ const reviewContainer = document.getElementById('review-container');
 
 // Função para mostrar uma tela e esconder as outras
 function showScreen(screen) {
+    console.log("Mostrando tela:", screen.id);
+    
     // Esconder todas as telas
     loginScreen.classList.remove('active');
     introScreen.classList.remove('active');
@@ -59,12 +61,15 @@ function showScreen(screen) {
 }
 
 // Inicialização
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM carregado, inicializando quiz...");
+    
     // Event listener para o botão de início
     const startBtn = document.getElementById('start-btn');
     const studentNameInput = document.getElementById('student-name');
     
     startBtn.addEventListener('click', function() {
+        console.log("Botão Começar clicado");
         studentName = studentNameInput.value.trim() || 'Aluno';
         welcomeName.textContent = studentName;
         loginTime = new Date();
@@ -72,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Registrar login (poderia ser enviado para um servidor)
         console.log(`Login: ${studentName}, Data: ${loginTime.toLocaleString()}`);
         
+        // Mostrar a tela de introdução
         showScreen(introScreen);
     });
     
@@ -80,6 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     topicButtons.forEach(button => {
         button.addEventListener('click', () => {
             currentTopic = button.getAttribute('data-topic');
+            console.log("Tópico selecionado:", currentTopic);
             startQuiz(currentTopic);
         });
     });
@@ -99,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Iniciar o quiz com o tópico selecionado
 function startQuiz(topic) {
+    console.log("Iniciando quiz com tópico:", topic);
     currentQuestions = questions[topic];
     currentQuestionIndex = 0;
     userAnswers = Array(currentQuestions.length).fill(null);
@@ -117,6 +125,7 @@ function startQuiz(topic) {
 
 // Mostrar uma questão específica
 function showQuestion(index) {
+    console.log("Mostrando questão:", index + 1);
     const question = currentQuestions[index];
     
     // Atualizar contador e barra de progresso
@@ -182,6 +191,7 @@ function showQuestion(index) {
         
         // Configurar botão de verificação
         submitBtn.textContent = userAnswers[index] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
+        submitBtn.onclick = checkAnswer;
     }
 }
 
@@ -208,6 +218,7 @@ function createMultipleChoiceOption(text, optionIndex, questionIndex) {
     // Adicionar evento de clique
     if (!reviewMode) {
         optionDiv.addEventListener('click', () => {
+            console.log("Opção selecionada:", optionIndex);
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
             options.forEach(opt => {
@@ -232,6 +243,7 @@ function createMultipleChoiceOption(text, optionIndex, questionIndex) {
         // Adicionar evento de clique também ao input
         input.addEventListener('click', (e) => {
             e.stopPropagation(); // Evitar propagação para o div pai
+            console.log("Input radio selecionado:", optionIndex);
             
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
@@ -273,6 +285,7 @@ function createTrueFalseOption(text, value, questionIndex) {
     // Adicionar evento de clique
     if (!reviewMode) {
         optionDiv.addEventListener('click', () => {
+            console.log("Opção V/F selecionada:", value);
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
             options.forEach(opt => {
@@ -297,6 +310,7 @@ function createTrueFalseOption(text, value, questionIndex) {
         // Adicionar evento de clique também ao input
         input.addEventListener('click', (e) => {
             e.stopPropagation(); // Evitar propagação para o div pai
+            console.log("Input radio V/F selecionado:", value);
             
             // Remover seleção anterior
             const options = document.querySelectorAll('.option');
@@ -317,6 +331,7 @@ function createTrueFalseOption(text, value, questionIndex) {
 
 // Verificar resposta
 function checkAnswer() {
+    console.log("Verificando resposta para questão:", currentQuestionIndex + 1);
     const currentQuestion = currentQuestions[currentQuestionIndex];
     const userAnswer = userAnswers[currentQuestionIndex];
     
@@ -374,18 +389,20 @@ function checkAnswer() {
     submitBtn.textContent = 'Próxima Questão';
     
     // Remover todos os event listeners anteriores
-    const newSubmitBtn = submitBtn.cloneNode(true);
-    submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
-    submitBtn = newSubmitBtn;
+    submitBtn.onclick = null;
     
     // Adicionar novo event listener para o botão de próxima questão
     submitBtn.addEventListener('click', function nextQuestionHandler() {
+        console.log("Avançando para próxima questão após verificação");
         if (currentQuestionIndex < currentQuestions.length - 1) {
             showNextQuestion();
         } else {
             calculateScore();
             showResultScreen();
         }
+        
+        // Remover este event listener após uso
+        submitBtn.removeEventListener('click', nextQuestionHandler);
     });
 }
 
@@ -406,16 +423,15 @@ function showNextQuestion() {
         // Resetar o botão de verificação
         submitBtn.textContent = userAnswers[currentQuestionIndex] !== null ? 'Verificar Novamente' : 'Verificar Resposta';
         
-        // Remover todos os event listeners anteriores e adicionar o correto
-        const newSubmitBtn = submitBtn.cloneNode(true);
-        submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
-        submitBtn = newSubmitBtn;
+        // Remover todos os event listeners anteriores
+        submitBtn.onclick = null;
         submitBtn.addEventListener('click', checkAnswer);
     }
 }
 
 // Calcular pontuação
 function calculateScore() {
+    console.log("Calculando pontuação final");
     score = 0;
     
     currentQuestions.forEach((question, index) => {
@@ -435,10 +451,13 @@ function calculateScore() {
             score++;
         }
     });
+    
+    console.log("Pontuação final:", score, "de", currentQuestions.length);
 }
 
 // Função para voltar ao menu inicial
 function goToIntroScreen() {
+    console.log("Voltando ao menu inicial");
     // Resetar o estado do quiz
     currentTopic = '';
     currentQuestions = [];
@@ -452,14 +471,13 @@ function goToIntroScreen() {
     
     // Resetar o botão de verificação
     submitBtn.textContent = 'Verificar Resposta';
-    const newSubmitBtn = submitBtn.cloneNode(true);
-    submitBtn.parentNode.replaceChild(newSubmitBtn, submitBtn);
-    submitBtn = newSubmitBtn;
+    submitBtn.onclick = null;
     submitBtn.addEventListener('click', checkAnswer);
 }
 
 // Mostrar tela de resultados
 function showResultScreen() {
+    console.log("Mostrando tela de resultados");
     // Atualizar pontuação
     scoreValue.textContent = score;
     
@@ -538,6 +556,7 @@ function showResultScreen() {
 
 // Mostrar tela de revisão
 function showReviewScreen() {
+    console.log("Mostrando tela de revisão");
     reviewMode = true;
     reviewContainer.innerHTML = '';
     
@@ -631,6 +650,7 @@ function showReviewScreen() {
 
 // Mostrar resposta em modo de revisão
 function showAnswerInReviewMode(index) {
+    console.log("Mostrando resposta em modo de revisão para questão:", index + 1);
     const currentQuestion = currentQuestions[index];
     const userAnswer = userAnswers[index];
     
