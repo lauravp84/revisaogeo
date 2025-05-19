@@ -232,7 +232,14 @@ header h1 {
 .quiz-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
 }
 
 .nav-btn, .action-btn {
@@ -256,6 +263,16 @@ header h1 {
 .nav-btn:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+#home-btn {
+    background-color: #e8f4ff;
+    border: 1px solid #c0d8f0;
+    color: var(--secondary-color);
+}
+
+#home-btn:hover {
+    background-color: #d0e8ff;
 }
 
 .action-btn {
@@ -459,6 +476,11 @@ footer {
     .score-circle {
         width: 120px;
         height: 120px;
+    }
+    
+    .navigation-buttons {
+        width: 100%;
+        justify-content: space-between;
     }
 }
 

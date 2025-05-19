@@ -48,6 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
     reviewBtn.addEventListener('click', showReviewScreen);
     restartBtn.addEventListener('click', goToIntroScreen);
     backToResultsBtn.addEventListener('click', showResultScreen);
+    
+    // Event listener para o botão Voltar ao Menu
+    const homeBtn = document.getElementById('home-btn');
+    homeBtn.addEventListener('click', goToIntroScreen);
 });
 
 // Iniciar o quiz com o tópico selecionado
@@ -297,6 +301,25 @@ function calculateScore() {
             }
         }
     });
+}
+
+// Função para voltar ao menu inicial
+function goToIntroScreen() {
+    // Resetar o estado do quiz
+    currentTopic = '';
+    currentQuestions = [];
+    currentQuestionIndex = 0;
+    userAnswers = [];
+    score = 0;
+    reviewMode = false;
+    
+    // Mostrar a tela inicial
+    showScreen(introScreen);
+    
+    // Resetar o botão de verificação
+    submitBtn.textContent = 'Verificar Resposta';
+    submitBtn.removeEventListener('click', showNextQuestion);
+    submitBtn.addEventListener('click', checkAnswer);
 }
 
 // Mostrar tela de resultados
