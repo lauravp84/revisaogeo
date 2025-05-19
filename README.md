@@ -4,7 +4,7 @@ Este é um aplicativo web interativo para estudos e prática de questões sobre 
 
 ## Características
 
-- 75 questões organizadas em 5 tópicos
+- 125 questões organizadas em 5 tópicos
 - Suporte para questões de múltipla escolha, verdadeiro/falso e múltipla assertiva
 - Correção automática das respostas
 - Explicações detalhadas para cada questão
